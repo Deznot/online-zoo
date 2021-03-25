@@ -731,6 +731,57 @@ img {
 
 /* Header style end*/
 /* intro style start*/
+.info-item {
+  position: relative;
+  margin-right: 46px;
+}
+
+.info-item:last-child {
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .info-item {
+    margin-right: 30px;
+  }
+}
+
+.info-item__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-item__photo {
+  width: 140px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .info-item__photo {
+    width: 180px;
+  }
+}
+
+.info-item__info {
+  display: none;
+  position: absolute;
+  left: 25px;
+  bottom: 30px;
+  width: 194px;
+}
+
+.info-item__description {
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 14px;
+}
+
+.info-item__watch {
+  margin-right: 10px;
+}
+
 .intro {
   height: 940px;
   position: relative;

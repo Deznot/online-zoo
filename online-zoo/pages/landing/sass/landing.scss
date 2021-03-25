@@ -309,6 +309,56 @@ img {
 
 /* intro style start*/
 
+.info-item {
+    position: relative;
+    margin-right: 46px;
+    &:last-child {
+        margin-right: 0px;
+    }
+    @media only screen and (max-width: 639px) {
+
+    } 
+    @media only screen and (min-width: 640px) {
+
+    } 
+    @media only screen and (max-width: 1200px) {
+        margin-right: 30px;
+    } 
+    &__actions {
+        display: flex;
+    }
+    &__photo {
+        width: 140px;
+        @media only screen and (max-width: 639px) {
+
+        } 
+        @media only screen and (min-width: 640px) {
+    
+        } 
+        @media only screen and (max-width: 1200px) {
+            width: 180px;
+        } 
+    }
+    &__info {
+        display: none;
+        position: absolute;
+        left: 25px;
+        bottom: 30px;
+        width: 194px;
+    }
+    &__description {
+        color: #FFFFFF;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 14px;
+    }
+
+    &__watch {
+        margin-right: 10px;
+    }
+    
+}
 
 .intro {
     height: 940px;
