@@ -288,3 +288,144 @@ img {
 }
 
 /* Header style end*/
+
+.intro {
+    overflow: hidden;
+    height: 940px;
+    position: relative;
+    background: url('/assets/images/desktopLight/bgFirst_screen.jpg') no-repeat center;
+    background-size: cover;
+    @media only screen and (max-width: 639px) {
+        max-height: 669px;
+    } 
+    @media only screen and (min-width: 640px) {
+    } 
+    @media only screen and (max-width: 1200px) {
+        background: url('/assets/images/desktopLight/main1200.png') no-repeat center;
+        background-size: cover;
+    } 
+
+    
+    &__wrapper {
+        padding-top: 206px;
+        margin-left: 360px;
+        @media only screen and (max-width: 639px) {
+            margin: 0 10px;
+            padding-top: 92px;
+        } 
+        @media only screen and (min-width: 640px) {
+            padding-top: 122px;
+            margin: 0 20px;
+        } 
+        @media only screen and (min-width: 1200px) {
+            padding-top: 128px;
+            margin-left: 150px;
+        } 
+        @media only screen and (min-width: 1920px){
+        
+        }
+    }
+
+    &__title {
+        max-width: 793px;
+        margin: 0;
+        margin-bottom: 37px;
+        padding: 0;
+        border: 0;
+        font-weight: 900;
+        font-size: 89px;
+        line-height: 104px;
+        color: #FEFEFE;
+        @media only screen and (max-width: 639px) {
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.8px;
+        } 
+        @media only screen and (min-width: 640px) {
+            max-width: 599px;
+            font-size: 64px;
+            line-height: 75px;
+            margin-bottom: 30px;
+        } 
+        @media only screen and (min-width: 1200px) {
+
+        } 
+        @media only screen and (min-width: 1920px){
+        
+        }
+    }
+
+    &__button {}
+
+    &__slider-wrapper {
+        position: absolute;
+        width: 1087px;
+        left: 810px;
+        top: 270px;
+        overflow: hidden;
+        background: url('/assets/images/desktopLight/intro/slider/line.svg') no-repeat left center;
+        @media only screen and (max-width: 320px) {
+            width: 317px;
+        } 
+        @media only screen and (max-width: 640px) {
+            width: 588px;
+            top: 408px;
+            left: 52px;
+        } 
+        @media only screen and (max-width: 1200px) {
+            width: 720px;
+            left: 463px;
+            top: 368px;
+        } 
+    }
+
+    &__slider {
+        display: inline-flex;
+        // justify-content: center;
+        align-items: center;
+        margin-left: 135px;
+    }
+
+    
+
+    &__item {
+        &--active {
+            .info-item__photo {
+                width: 245px;
+            }
+            .info-item__info {
+                display: block;
+            }
+        }
+    }
+
+    &__counter {
+        margin: 0;
+        text-align: initial;
+    }
+
+    &__current {
+        color: #FEFEFE;
+    }
+
+    &__total {
+        color: #BDBDBD;
+    }
+
+    &__range {
+        -webkit-appearance: none;
+        background: rgba(189, 189, 189, 0.57);
+        &:focus {
+            outline: none;
+        }
+        &::-webkit-slider-thumb {
+            background: #FEFEFE;
+        }
+        &::-moz-range-thumb {
+            background: #FEFEFE;
+        }
+    }
+    
+}
+
+/* intro style end*/
