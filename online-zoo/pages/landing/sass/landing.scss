@@ -45,6 +45,39 @@ img {
     width: 100%;
 }
 
+.design-toggle {
+    
+    &__range {
+        -webkit-appearance: none;
+        background: #F1F1F1;
+        border-radius: 190px;
+        width: 54px;
+        height: 30px;
+        padding: 5px;
+        &:focus {
+            outline: none;
+        }
+        &::-webkit-slider-thumb {
+            background: #FFFFFF;
+            width: 20px;
+            height: 20px;
+            box-shadow: 2px 4px 5px rgba(6, 12, 70, 0.15);
+            border-radius: 50%;
+            cursor: pointer;
+            -webkit-appearance: none;
+        }
+        &::-moz-range-thumb {
+            background: #FFFFFF;
+            width: 20px;
+            height: 20px;
+            box-shadow: 2px 4px 5px rgba(6, 12, 70, 0.15);
+            border-radius: 50%;
+            cursor: pointer;
+            -moz-appearance: none;
+        }
+    }
+}
+
 /* Header style start*/
 .header {
 
@@ -204,7 +237,7 @@ img {
 .logo-header {
     width: 59px;
     height: 63px;
-    
+
     &__link {
         text-decoration: none;
     }
