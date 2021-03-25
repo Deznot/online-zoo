@@ -475,6 +475,37 @@ img {
   -moz-appearance: none;
 }
 
+.main-btn {
+  width: 245px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  border-radius: 3px;
+  border: none;
+  padding: 12px 0;
+}
+
+.main-btn__img {
+  margin-right: 5px;
+  width: 32px;
+  height: 32px;
+}
+
 /* Header style start*/
 .header__wrapper {
   height: 96px;
