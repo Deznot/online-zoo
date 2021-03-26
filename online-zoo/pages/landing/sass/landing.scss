@@ -572,12 +572,29 @@ img {
     &__slide {
         min-width: 790px;
     }
+
+    &__counter {
+        .count {
+            margin-bottom: 11px;
+        }
+    }
     /* how-it-works counter start */
     &__range {
+        &::-webkit-slider-thumb {
+            width: 62px;
+            height: 10px;
+        }
+
+        &::-moz-range-thumb {
+            width: 62px;
+            height: 10px;
+        }
+
         @media only screen and (min-width: 320px) and (max-width: 639px) {
             &::-webkit-slider-thumb {
                 width: 80px;
             }
+
             &::-moz-range-thumb {
                 width: 80px;
             }
@@ -586,6 +603,7 @@ img {
             &::-webkit-slider-thumb {
                 width: 80px;
             }
+
             &::-moz-range-thumb {
                 width: 80px;
             }
@@ -594,6 +612,7 @@ img {
             &::-webkit-slider-thumb {
                 width: 80px;
             }
+            
             &::-moz-range-thumb {
                 width: 80px;
             }
