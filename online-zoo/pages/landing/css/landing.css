@@ -969,4 +969,131 @@ img {
 }
 
 /* intro style end*/
+/* how_it_works start*/
+.how-it-works {
+  /* how-it-works counter start */
+  /* how-it-works counter end */
+}
+
+.how-it-works__content {
+  min-width: 790px;
+  margin: 100px 564px;
+}
+
+.how-it-works__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  color: #333333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.how-it-works__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4F4F4F;
+  margin-bottom: 30px;
+}
+
+.how-it-works__slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.how-it-works__slider-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.how-it-works__slider-counter {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.how-it-works__slide {
+  min-width: 790px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 639px) {
+  .how-it-works__range::-webkit-slider-thumb {
+    width: 80px;
+  }
+  .how-it-works__range::-moz-range-thumb {
+    width: 80px;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1199.98px) {
+  .how-it-works__range::-webkit-slider-thumb {
+    width: 80px;
+  }
+  .how-it-works__range::-moz-range-thumb {
+    width: 80px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1919.98px) {
+  .how-it-works__range::-webkit-slider-thumb {
+    width: 80px;
+  }
+  .how-it-works__range::-moz-range-thumb {
+    width: 80px;
+  }
+}
+
+.how-it-works__button {
+  margin: 0 auto;
+}
+
+.how-it-works__footer {
+  background: #F2F2F2;
+}
+
+.how-it-works__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  padding: 100px 360px 132px 360px;
+}
+
+.how-it-works__card {
+  grid-column: span 1;
+}
+
+.how-it-works__card-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.how-it-works__card-title {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.how-it-works__card-descr {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.1px;
+}
+
+/* how_it_works end*/
 /*# sourceMappingURL=landing.css.map */
