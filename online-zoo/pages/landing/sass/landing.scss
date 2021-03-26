@@ -119,6 +119,50 @@ img {
     background: url('/assets/images/global/social-net/vk.svg') no-repeat center;
 }
 
+.counter {
+    text-align: center;
+    margin-bottom: 30px;
+    
+    &__current {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        color: #333333;
+    }
+    
+    &__total {
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 16px;
+        color: #BDBDBD;
+    }
+    
+    &__range {
+        -webkit-appearance: none;
+        background: rgba(189, 189, 189, 0.57);
+        width: 245px;
+        height: 5px;
+        &:focus {
+            outline: none;
+        }
+        &::-webkit-slider-thumb {
+            background: #333333;
+            width: 30px;
+            height: 10px;
+            cursor: pointer;
+            -webkit-appearance: none;
+        }
+        &::-moz-range-thumb {
+            background: #333333;
+            width: 30px;
+            height: 10px;
+            cursor: pointer;
+            border-radius: 0px;
+        }
+    }
+}
+
 /* Header style start*/
 .header {
 
@@ -315,29 +359,11 @@ img {
     &:last-child {
         margin-right: 0px;
     }
-    @media only screen and (max-width: 639px) {
-
-    } 
-    @media only screen and (min-width: 640px) {
-
-    } 
-    @media only screen and (max-width: 1200px) {
-        margin-right: 30px;
-    } 
     &__actions {
         display: flex;
     }
     &__photo {
         width: 140px;
-        @media only screen and (max-width: 639px) {
-
-        } 
-        @media only screen and (min-width: 640px) {
-    
-        } 
-        @media only screen and (max-width: 1200px) {
-            width: 180px;
-        } 
     }
     &__info {
         display: none;
@@ -366,11 +392,6 @@ img {
     background: url('/assets/images/landing/intro/intro-bg.png') no-repeat center;
     background-size: cover;
     overflow: hidden;
-    @media only screen and (max-width: 639px) {
-        max-height: 669px;
-    } 
-    @media only screen and (min-width: 640px) {
-    } 
     @media only screen and (max-width: 1200px) {
         background: url('/assets/images/landing/intro/intro-bg-1200.png') no-repeat center;
         background-size: cover;
@@ -378,74 +399,30 @@ img {
 
     
     &__wrapper {
-        padding-top: 206px;
         margin-left: 360px;
-        @media only screen and (max-width: 639px) {
-            margin: 0 10px;
-            padding-top: 92px;
-        } 
-        @media only screen and (min-width: 640px) {
-            padding-top: 122px;
-            margin: 0 20px;
-        } 
-        @media only screen and (min-width: 1200px) {
-            padding-top: 128px;
-            margin-left: 150px;
-        } 
-        @media only screen and (min-width: 1920px){
-        
-        }
+        margin-bottom: 20px;
     }
 
     &__title {
         max-width: 793px;
         margin: 0;
         margin-bottom: 37px;
+        margin-top: 206px;
         padding: 0;
         border: 0;
         font-weight: 900;
         font-size: 89px;
         line-height: 104px;
         color: #FEFEFE;
-        @media only screen and (max-width: 639px) {
-            font-size: 48px;
-            line-height: 56px;
-            letter-spacing: -0.8px;
-        } 
-        @media only screen and (min-width: 640px) {
-            max-width: 599px;
-            font-size: 64px;
-            line-height: 75px;
-            margin-bottom: 30px;
-        } 
-        @media only screen and (min-width: 1200px) {
-
-        } 
-        @media only screen and (min-width: 1920px){
-        
-        }
     }
 
     &__slider-wrapper {
         position: absolute;
         min-width: 1087px;
-        left: 810px;
+        left: 820px;
         top: 406px;
         overflow: hidden;
         background: url('/assets/images/landing/intro/slider/line.svg') no-repeat left center;
-        @media only screen and (max-width: 320px) {
-            min-width: 317px;
-        } 
-        @media only screen and (max-width: 640px) {
-            min-width: 588px;
-            top: 408px;
-            left: 52px;
-        } 
-        @media only screen and (max-width: 1200px) {
-            min-width: 720px;
-            left: 463px;
-            top: 368px;
-        } 
     }
 
     &__slider {
@@ -468,8 +445,12 @@ img {
     }
 
     &__counter {
+        position: absolute;
+        top: 778px;
+        left: 1143px;
+        width: 245px;
         margin: 0;
-        text-align: initial;
+        text-align: center;
     }
 
     &__current {
