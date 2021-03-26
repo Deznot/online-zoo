@@ -123,6 +123,10 @@ img {
     text-align: center;
     margin-bottom: 30px;
     
+    &__count {
+        margin-bottom: 11px;
+    }
+
     &__current {
         font-style: normal;
         font-weight: 900;
@@ -573,11 +577,6 @@ img {
         min-width: 790px;
     }
 
-    &__counter {
-        .count {
-            margin-bottom: 11px;
-        }
-    }
     /* how-it-works counter start */
     &__range {
         &::-webkit-slider-thumb {
@@ -612,7 +611,7 @@ img {
             &::-webkit-slider-thumb {
                 width: 80px;
             }
-            
+
             &::-moz-range-thumb {
                 width: 80px;
             }
@@ -661,3 +660,84 @@ img {
 }
 
 /* how_it_works end*/
+
+/* pets_in_Zoo start*/
+.pets-in-zoo {
+    &__wrapper {
+        padding: 100px 0;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        color: #333333;
+        margin-bottom: 35px;
+    }
+    &__slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        &-wrapper {
+            overflow: hidden;
+            max-width: 1200px;
+        }
+        &-inner {
+            display: inline-flex;
+        }
+        &-left-arrow {
+            margin-right: 20px;
+        }
+        &-right-arrow {
+            margin-left: 20px;
+        }
+        &-counter {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+    &__slide {
+        position: relative;
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0px;
+        }
+        &--active {
+            .pets-in-zoo__info {
+                display: block;
+            }
+        }
+    }
+
+    &__photo {
+        min-width: 278px;
+    }
+
+    &__info {
+        display: none;
+        position: absolute;
+        top: 269px;
+        left: 22px;
+        width: 194px;
+    }
+    &__description {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        margin-bottom: 14px;
+    }
+    &__actions {
+        display: flex;
+    }
+    &__watch {
+        margin-right: 10px;  
+    }
+
+    &__button {
+        margin: 0 auto;
+    }
+}
+
+/* pets_in_Zoo end*/

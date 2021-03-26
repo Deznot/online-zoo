@@ -531,6 +531,10 @@ img {
   margin-bottom: 30px;
 }
 
+.counter__count {
+  margin-bottom: 11px;
+}
+
 .counter__current {
   font-style: normal;
   font-weight: 900;
@@ -1019,10 +1023,6 @@ img {
   min-width: 790px;
 }
 
-.how-it-works__counter .count {
-  margin-bottom: 11px;
-}
-
 .how-it-works__range::-webkit-slider-thumb {
   width: 62px;
   height: 10px;
@@ -1110,4 +1110,103 @@ img {
 }
 
 /* how_it_works end*/
+/* pets_in_Zoo start*/
+.pets-in-zoo__wrapper {
+  padding: 100px 0;
+}
+
+.pets-in-zoo__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 35px;
+}
+
+.pets-in-zoo__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.pets-in-zoo__slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+.pets-in-zoo__slider-inner {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.pets-in-zoo__slider-left-arrow {
+  margin-right: 20px;
+}
+
+.pets-in-zoo__slider-right-arrow {
+  margin-left: 20px;
+}
+
+.pets-in-zoo__slider-counter {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pets-in-zoo__slide {
+  position: relative;
+  margin-right: 30px;
+}
+
+.pets-in-zoo__slide:last-child {
+  margin-right: 0px;
+}
+
+.pets-in-zoo__slide--active .pets-in-zoo__info {
+  display: block;
+}
+
+.pets-in-zoo__photo {
+  min-width: 278px;
+}
+
+.pets-in-zoo__info {
+  display: none;
+  position: absolute;
+  top: 269px;
+  left: 22px;
+  width: 194px;
+}
+
+.pets-in-zoo__description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.pets-in-zoo__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pets-in-zoo__watch {
+  margin-right: 10px;
+}
+
+.pets-in-zoo__button {
+  margin: 0 auto;
+}
+
+/* pets_in_Zoo end*/
 /*# sourceMappingURL=landing.css.map */
