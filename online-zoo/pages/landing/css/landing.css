@@ -1209,4 +1209,93 @@ img {
 }
 
 /* pets_in_Zoo end*/
+/* pay_and_feed start */
+.pay-and-feed {
+  background: #F2F2F2;
+}
+
+.pay-and-feed__wrapper {
+  padding: 100px 0;
+  min-width: 1200px;
+}
+
+.pay-and-feed__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.pay-and-feed__descr {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 92px;
+}
+
+.pay-and-feed__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.pay-and-feed__cards-arrow {
+  margin-right: 63px;
+  max-width: 106px;
+}
+
+.pay-and-feed__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 63px;
+  width: 245px;
+  height: 245px;
+  border: 3px solid #4BD8CB;
+  border-radius: 50%;
+}
+
+.pay-and-feed__card-pic {
+  margin-bottom: 18.11px;
+  width: 60px;
+  height: 60px;
+}
+
+.pay-and-feed__card-title {
+  width: 136px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.pay-and-feed__card:last-child {
+  margin-right: 0px;
+}
+
+.pay-and-feed__button {
+  margin: 0 auto;
+}
+
+/* pay_and_feed end */
 /*# sourceMappingURL=landing.css.map */
