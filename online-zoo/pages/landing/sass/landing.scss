@@ -247,6 +247,11 @@ img {
         left: 20%;
     }
 
+    &__bg {
+	 	transition: fill .3s linear;
+        fill: #4AD7CD;
+        pointer-events: fill;
+    }
 }
 
 .tooltip {

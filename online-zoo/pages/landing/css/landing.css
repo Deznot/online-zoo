@@ -656,6 +656,13 @@ img {
   left: 20%;
 }
 
+.main-map__bg {
+  -webkit-transition: fill .3s linear;
+  transition: fill .3s linear;
+  fill: #4AD7CD;
+  pointer-events: fill;
+}
+
 .tooltip__text {
   visibility: hidden;
   width: 436px;
