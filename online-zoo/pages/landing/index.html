@@ -8,29 +8,33 @@
     <link rel="stylesheet" href="./css/landing.css">
 </head>
 <body>
+    <h1 class="visuallyhidden">Online Zoo</h1>
     <header class="header">
         <div class="wrapper">
             <div class="header__wrapper">
 
-                <div class="header__logo logo-header">
-                    <a href="" class="logo-header__link">
-                        <h1 class="logo-header__text"><span class="logo-header__zoo">zoo</span><span class="logo-header__online">online</span></h1>
+                <div class="header__logo logo">
+                    <a href="/pages/landing/index.html" class="logo__link">
+                        <div class="logo__bg"></div>
                     </a>
                 </div>
 
                 <nav class="header__nav nav-header">
                     <ul class="nav-header__list">
                         <li class="nav-header__item">
-                            <a href="" class="nav-header__link nav-header__link--active">About</a>
+                            <a href="/pages/landing/index.html" class="nav-header__link nav-header__link--active">About</a>
                         </li>
                         <li class="nav-header__item">
-                            <a href="" class="nav-header__link">Map</a>
+                            <a href="/pages/map/map.html" class="nav-header__link">Map</a>
                         </li>
                         <li class="nav-header__item">
-                            <a href="" class="nav-header__link">Contact Us</a>
+                            <a href="/pages/live-broadcast/broadcast.html" class="nav-header__link">Zoos</a>
                         </li>
                         <li class="nav-header__item">
-                            <a href="" class="nav-header__link nav-header__link--design">Design</a>
+                            <a href="#contact-us" class="nav-header__link">Contact Us</a>
+                        </li>
+                        <li class="nav-header__item">
+                            <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp" class="nav-header__link nav-header__link--design">Design</a>
                         </li>
                     </ul>
                 </nav>
@@ -51,7 +55,7 @@
             </div>
         </div>
     </header>
-
+    
     <main class="main">
         <section class="intro">
 
@@ -821,13 +825,13 @@
     
     <footer class="footer">
         <div class="footer__wrapper">
-            <div class="footer__logo logo-footer">
-                <a href="" class="logo-footer__link">
-                    <h2 class="logo-footer__text">zoo <span class="logo-footer__online">online</span></h2>
+            <div class="footer__logo logo">
+                <a href="" class="logo__link">
+                    <div class="logo__bg"></div>
                 </a>
             </div>
 
-            <div class="footer__contact-us contact-us">
+            <div class="footer__contact-us contact-us" id="contact-us">
                 <h3 class="contact-us__title">Contact us</h3>
 
                 <form action="" class="contact-us__form form" name="contact-us__form">
@@ -901,8 +905,7 @@
                 
             </div>
         </div>
-        
-        
+
     </footer>
 
 </body>
