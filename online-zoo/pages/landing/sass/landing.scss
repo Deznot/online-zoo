@@ -776,10 +776,14 @@ img {
     &__button {
         margin: 0 auto;
     }
+}
 
-    &__footer {
-        background: #F2F2F2;
-    }
+/* how_it_works end*/
+
+/* inspiring start */
+
+.inspiring {
+    background: #F2F2F2;
     &__cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -813,7 +817,7 @@ img {
     }
 }
 
-/* how_it_works end*/
+/* inspiring end */
 
 /* pets_in_Zoo start*/
 .pets-in-zoo {
