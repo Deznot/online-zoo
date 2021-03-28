@@ -102,6 +102,7 @@ img {
 }
 
 .main-btn {
+    position: relative;
     width: 245px;
     height: 55px;
     display: flex;
@@ -118,10 +119,16 @@ img {
     border-radius: 3px;
     border: none;
     padding: 12px 0;
+    transition: .5s linear;
     &__img {
         margin-right: 5px;
         width: 32px;
         height: 32px;
+    }
+
+    &:hover, &:focus, &:active {
+        cursor: pointer;
+        filter: hue-rotate(-30deg);
     }
 }
 
@@ -187,6 +194,7 @@ img {
 }
 
 .social-networks {
+    transition: .4 linear;
     &__list {
         display: flex;
     }
@@ -195,6 +203,10 @@ img {
         margin-right: 15px;
         &:last-child {
             margin-right: 0;
+        }
+        &:hover, &:focus, &:active {
+            cursor: pointer;
+            transform: scale(1.5);
         }
     }
 
@@ -608,6 +620,7 @@ img {
     
 
     &__item {
+        transition: .2s linear;
         &--active {
             .info-item__photo {
                 width: 245px;
@@ -615,6 +628,10 @@ img {
             .info-item__info {
                 display: block;
             }
+        }
+        &:hover {
+           cursor: pointer;
+           transform: scale(1.1);
         }
     }
 

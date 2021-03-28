@@ -499,6 +499,7 @@ img {
 }
 
 .main-btn {
+  position: relative;
   width: 245px;
   height: 55px;
   display: -webkit-box;
@@ -521,12 +522,20 @@ img {
   border-radius: 3px;
   border: none;
   padding: 12px 0;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
 }
 
 .main-btn__img {
   margin-right: 5px;
   width: 32px;
   height: 32px;
+}
+
+.main-btn:hover, .main-btn:focus, .main-btn:active {
+  cursor: pointer;
+  -webkit-filter: hue-rotate(-30deg);
+          filter: hue-rotate(-30deg);
 }
 
 .instagram {
@@ -596,6 +605,11 @@ img {
   border-radius: 0px;
 }
 
+.social-networks {
+  -webkit-transition: .4 linear;
+  transition: .4 linear;
+}
+
 .social-networks__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -608,6 +622,12 @@ img {
 
 .social-networks__item:last-child {
   margin-right: 0;
+}
+
+.social-networks__item:hover, .social-networks__item:focus, .social-networks__item:active {
+  cursor: pointer;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .social-networks__link {
@@ -1046,12 +1066,23 @@ img {
   margin-left: 135px;
 }
 
+.intro__item {
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
 .intro__item--active .info-item__photo {
   width: 245px;
 }
 
 .intro__item--active .info-item__info {
   display: block;
+}
+
+.intro__item:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .intro__counter {
