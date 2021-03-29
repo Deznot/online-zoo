@@ -1,6 +1,7 @@
 /* Header style start*/
 .header {
-
+    box-shadow: 0px 4px 8px 0px rgba(44, 101, 77, 0.08);
+    
     &__wrapper {
         height: 96px;
         display: flex;
@@ -24,10 +25,11 @@
 
     &__logo {
         @media only screen and (max-width: 639px) {
+            // margin-right: 120px;//должно быть 120 косяк из за logo
             margin-right: 100px;
         }
         @media only screen and (min-width: 640px) {
-
+            // margin-right: 88px;
         } 
         @media only screen and (min-width: 1200px) {
         
@@ -74,33 +76,7 @@
  
 }
 
-.burger {
-
-    &__line {
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 3px;
-        background-color: #333333;
-        right: 0;
-        &--first {
-            top: 0;
-        }
-
-        &--second {
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        &--third {
-            bottom: 0;
-            width: 33px;
-        }
-    }
-}
-
 .nav-header {
-
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -127,14 +103,13 @@
         font-size: 16px;
         line-height: 19px;
         color: #333333;
-        &:hover:not(.nav-header__link--active), &:focus:not(.nav-header__link--active), &:active:not(.nav-header__link--active) {
+        &:hover, &:focus, &:active {
             opacity: .75;
             cursor: pointer;
         }
         &--active {
             text-decoration: underline;
             font-weight: 900;
-            cursor: default;
         }
         @media only screen and (min-width: 640px) {
             &--design {
@@ -153,6 +128,35 @@
         }
     }
     
+}
+
+.logo-header {
+    width: 59px;
+    height: 63px;
+    &__link {
+        text-decoration: none;
+    }
+
+    &__online {
+        display: block;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.08em;
+        color: #333333;
+    }
+
+    &__zoo {
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: #333333;
+    }
+
+    &__text {
+        width: 59px;
+        height: 42px;
+    }
 }
 
 /* Header style end*/
