@@ -1559,8 +1559,20 @@ img {
   margin-left: 3px;
 }
 
+.testimonials__slider-right-arrow:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
 .testimonials__slider-left-arrow {
   margin-right: 7px;
+}
+
+.testimonials__slider-left-arrow:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .testimonials__slider-counter {
