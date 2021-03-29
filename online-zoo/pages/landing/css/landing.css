@@ -1992,6 +1992,14 @@ img {
           box-sizing: border-box;
   border-radius: 3px;
   margin-bottom: 25px;
+  -webkit-padding-start: 0.30em;
+          padding-inline-start: 0.30em;
+  -webkit-padding-end: 0.75em;
+          padding-inline-end: 0.75em;
+}
+
+.form__legend {
+  padding: 3px 5px 3px 3px;
 }
 
 .form__areafield-textarea {
@@ -2095,6 +2103,10 @@ img {
   margin-right: 24px;
 }
 
+.form__arr {
+  width: 48px;
+}
+
 .zoo-centre {
   font-weight: normal;
   font-size: 14px;
@@ -2118,6 +2130,7 @@ img {
 
 .zoo-centre__info {
   margin-bottom: 20px;
+  font-style: normal;
 }
 
 .zoo-centre__tel {

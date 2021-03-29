@@ -1372,6 +1372,12 @@ img {
         box-sizing: border-box;
         border-radius: 3px;
         margin-bottom: 25px;
+        padding-inline-start: 0.30em;
+        padding-inline-end: 0.75em;
+    }
+
+    &__legend {
+        padding: 3px 5px 3px 3px;
     }
 
     &__areafield-textarea {
@@ -1457,6 +1463,10 @@ img {
     &__button-text {
         margin-right: 24px;
     }
+    
+    &__arr {
+        width: 48px;
+    }
 
 }
 
@@ -1481,6 +1491,7 @@ img {
 
     &__info {
         margin-bottom: 20px;
+        font-style: normal;
     }
 
     &__tel {
