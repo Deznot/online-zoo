@@ -227,6 +227,16 @@ img {
     &__icon {
         position: absolute;
         width: 5.6%;
+        &--active {
+            .main-map__bg {
+                fill: #EB5757;
+            }
+        }
+        &:hover {
+            .main-map__bg {
+                fill: #EB5757;
+            }
+        }
     }
 
     //animals on map start
@@ -298,10 +308,6 @@ img {
     &:hover {
         .tooltip__text {
             visibility: visible;
-        }
-
-        .main-map__bg {
-            fill: #EB5757;
         }
     }
 

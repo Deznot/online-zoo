@@ -647,6 +647,14 @@ img {
   width: 5.6%;
 }
 
+.main-map__icon--active .main-map__bg {
+  fill: #EB5757;
+}
+
+.main-map__icon:hover .main-map__bg {
+  fill: #EB5757;
+}
+
 .main-map__eagle {
   left: 10.5%;
   top: 16%;
@@ -722,10 +730,6 @@ img {
 
 .tooltip:hover .tooltip__text {
   visibility: visible;
-}
-
-.tooltip:hover .main-map__bg {
-  fill: #EB5757;
 }
 
 .tooltip__photo {
