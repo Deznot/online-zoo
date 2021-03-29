@@ -860,9 +860,17 @@ img {
         }
         &-left-arrow {
             margin-right: 20px;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.3);
+            }
         }
         &-right-arrow {
             margin-left: 20px;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.3);
+            }
         }
         &-counter {
             text-align: center;
@@ -877,8 +885,20 @@ img {
         }
         &--active {
             .pets-in-zoo__info {
-                display: block;
+                opacity: 1;
+                bottom: 46px;
+                left: 22px;
             }
+        }
+        &:hover {
+            .pets-in-zoo__photo {
+                filter: brightness(70%);
+            }
+            .pets-in-zoo__info {
+                opacity: 1;
+                bottom: 46px;
+                left: 22px;
+            } 
         }
     }
 
@@ -887,11 +907,12 @@ img {
     }
 
     &__info {
-        display: none;
+        opacity: 0;
         position: absolute;
-        top: 269px;
+        bottom: 20px;
         left: 22px;
         width: 194px;
+        transition: all .5s linear;
     }
     &__description {
         font-weight: normal;
