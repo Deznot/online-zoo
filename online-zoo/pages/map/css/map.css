@@ -124,7 +124,7 @@
   color: #333333;
 }
 
-.nav-header__link:hover, .nav-header__link:focus, .nav-header__link:active {
+.nav-header__link:hover:not(.nav-header__link--active), .nav-header__link:focus:not(.nav-header__link--active), .nav-header__link:active:not(.nav-header__link--active) {
   opacity: .75;
   cursor: pointer;
 }
@@ -132,6 +132,7 @@
 .nav-header__link--active {
   text-decoration: underline;
   font-weight: 900;
+  cursor: default;
 }
 
 .logo-header {

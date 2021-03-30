@@ -1,0 +1,146 @@
+/* Header style start*/
+.header {
+    box-shadow: 0px 4px 8px 0px rgba(44, 101, 77, 0.08);
+    
+    &__wrapper {
+        height: 96px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 150px;
+        @media only screen and (max-width: 639px) {
+            margin: 0 10px;
+        }
+        @media only screen and (min-width: 640px) {
+            margin: 0 20px;
+        } 
+        @media only screen and (min-width: 1200px) {
+            margin: 0 150px;
+        } 
+        @media only screen and (min-width: 1920px){
+        
+        }
+    }
+
+    &__logo {
+        @media only screen and (max-width: 639px) {
+            margin-right: 100px;
+        }
+        @media only screen and (min-width: 640px) {
+        } 
+        @media only screen and (min-width: 1200px) {
+        
+        } 
+        @media only screen and (min-width: 1920px){
+        
+        }
+    }
+
+    &__nav {
+        @media only screen and (max-width: 639px) {
+            display: none;
+        }
+    }
+
+    &__container {
+        @media only screen and (max-width: 639px) {
+           display: flex;
+           align-items: center;
+           justify-content: flex-end;
+           padding-top: 15px;
+        }
+    }
+
+    &__radio {
+        width: 54px;
+        height: 30px;
+        img {
+            object-fit: cover;
+        }
+        
+    }
+
+    &__burger {
+        display: none;
+        position: relative;
+        width: 40px;
+        height: 21px;
+        @media only screen and (max-width: 639px) {
+            display: block;
+            margin-right: 26px;
+        }
+    }
+ 
+}
+
+.nav-header {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-right: 122px;
+        &:last-child {
+            margin-right: 0px;
+        }
+        @media only screen and (min-width: 640px) {
+            margin-right: 73px;
+        } 
+        @media only screen and (min-width: 1200px) {
+        
+        } 
+        @media only screen and (min-width: 1920px){
+            margin-right: 122px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+        &:hover:not(.nav-header__link--active), &:focus:not(.nav-header__link--active), &:active:not(.nav-header__link--active) {
+            opacity: .75;
+            cursor: pointer;
+        }
+        &--active {
+            text-decoration: underline;
+            font-weight: 900;
+            cursor: default;
+        }
+    }
+    
+}
+
+.logo-header {
+    width: 59px;
+    height: 63px;
+    &__link {
+        text-decoration: none;
+    }
+
+    &__online {
+        display: block;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.08em;
+        color: #333333;
+    }
+
+    &__zoo {
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: #333333;
+    }
+
+    &__text {
+        width: 59px;
+        height: 42px;
+    }
+}
+
+/* Header style end*/

@@ -101,13 +101,14 @@
         font-size: 16px;
         line-height: 19px;
         color: #333333;
-        &:hover, &:focus, &:active {
+        &:hover:not(.nav-header__link--active), &:focus:not(.nav-header__link--active), &:active:not(.nav-header__link--active) {
             opacity: .75;
             cursor: pointer;
         }
         &--active {
             text-decoration: underline;
             font-weight: 900;
+            cursor: default;
         }
     }
     
