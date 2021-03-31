@@ -218,6 +218,9 @@
 }
 
 .side-menu__wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
