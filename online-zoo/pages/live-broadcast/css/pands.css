@@ -163,6 +163,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 .videos__carusel {
@@ -313,6 +314,9 @@
 }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 60px;
   height: 910px;
 }
@@ -336,9 +340,6 @@
 .main__the-zoo {
   max-width: 1200px;
   width: 1200px;
-  position: absolute;
-  top: 154px;
-  left: 360px;
 }
 
 .main__content {
@@ -374,4 +375,278 @@
 }
 
 /* main end*/
+/* footer start */
+.footer {
+  background: #333333;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media only screen and (max-width: 639px) {
+  .footer__wrapper {
+    padding-top: 50px;
+    margin: 0 10px;
+    -ms-grid-rows: auto;
+    -ms-grid-columns: auto;
+        grid-template: auto / auto;
+        grid-template-areas: 'logo' 'nav' 'contact-us' 'zoo-centre' 'button' 'copyrights';
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .footer__wrapper {
+    padding-top: 96px;
+    margin: 0 20px;
+    -ms-grid-columns: auto fit-content(191px) auto;
+        grid-template-columns: auto fit-content(191px) auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 'logo button button'  'nav nav .' 'contact-us contact-us .' 'zoo-centre zoo-centre .' 'copyrights copyrights copyrights';
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer__wrapper {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto 225px auto auto;
+        grid-template-rows: auto 225px auto auto;
+    -webkit-column-gap: 76px;
+            column-gap: 76px;
+    margin: 0 150px;
+    padding-top: 100px;
+        grid-template-areas: 'logo nav'  'contact-us zoo-centre' 'contact-us button' 'copyrights copyrights';
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .footer__wrapper {
+    -ms-grid-rows: auto auto auto;
+    -ms-grid-columns: auto auto auto;
+        grid-template: auto auto auto / auto auto auto;
+        grid-template-areas: 'logo nav button' 'contact-us zoo-centre .' 'copyrights copyrights copyrights';
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+  }
+}
+
+.footer__logo {
+  grid-area: logo;
+}
+
+.footer__logo .logo__bg {
+  background: url("/assets/images/global/logo/logo-white.svg") no-repeat center;
+}
+
+@media only screen and (max-width: 639px) {
+  .footer__logo {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .footer__logo {
+    margin-bottom: 19px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .footer__logo {
+    margin-bottom: 57px;
+    width: 59px;
+    height: 54px;
+  }
+}
+
+.footer__contact-us {
+  grid-area: contact-us;
+}
+
+@media only screen and (max-width: 639px) {
+  .footer__contact-us {
+    width: 100%;
+    margin-bottom: 54px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .footer__contact-us {
+    margin-bottom: 77px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer__contact-us {
+    width: 383px;
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .footer__contact-us {
+    margin-bottom: 60px;
+    margin-right: 441px;
+  }
+}
+
+.footer__nav {
+  grid-area: nav;
+  padding-top: 17px;
+}
+
+@media only screen and (max-width: 639px) {
+  .footer__nav {
+    margin-bottom: 47px;
+  }
+  .footer__nav .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .footer__nav {
+    margin-bottom: 55px;
+  }
+  .footer__nav .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer__nav .nav__list {
+    width: 440px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__nav .nav__item {
+    margin-right: 73px;
+  }
+  .footer__nav .nav__item:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .footer__nav {
+    margin-right: 112px;
+    margin-bottom: 74px;
+  }
+  .footer__nav .nav__list {
+    max-width: 404px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__nav .nav__item {
+    max-width: 404px;
+    margin-right: 73px;
+  }
+  .footer__nav .nav__item:last-child {
+    margin-right: 0px;
+  }
+}
+
+.footer__nav .nav__item:last-child {
+  margin-right: 0px;
+}
+
+.footer__nav .nav__item .active {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.footer__zoo-centre {
+  grid-area: zoo-centre;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 639px) {
+  .footer__zoo-centre {
+    margin-bottom: 46px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .footer__zoo-centre {
+    margin-bottom: 71px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer__zoo-centre {
+    margin-bottom: 40px;
+  }
+}
+
+.footer__button {
+  grid-area: button;
+  width: 275px;
+}
+
+@media only screen and (max-width: 639px) {
+  .footer__button {
+    margin-bottom: 80px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .footer__button {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer__button {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .footer__button {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+}
+
+.footer__copyrights {
+  grid-area: copyrights;
+  border-top: 0.5px solid #FEFEFE;
+}
+
+@media only screen and (max-width: 639px) {
+  .footer__copyrights .copyrights__body {
+    padding: 28px 0;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .footer__copyrights .copyrights__body {
+    padding: 28px 0 48px 0;
+  }
+}
+
+/*footer end*/
 /*# sourceMappingURL=pands.css.map */
