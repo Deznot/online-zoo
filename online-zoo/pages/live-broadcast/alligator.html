@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../landing/css/main.css">
+    <link rel="stylesheet" href="./css/live-broadcast.css">
+</head>
+<body>
+    
+    <h1 class="visuallyhidden">Online Zoo</h1>
+    <header class="header">
+
+        <div class="wrapper">
+            <div class="header__wrapper">
+
+                <div class="header__logo logo">
+                    <a href="/pages/landing/index.html" class="logo__link">
+                        <div class="logo__bg"></div>
+                    </a>
+                </div>
+
+                <nav class="header__nav nav-header">
+                    <ul class="nav-header__list">
+                        <li class="nav-header__item">
+                            <a href="/pages/landing/index.html" class="nav-header__link">About</a>
+                        </li>
+                        <li class="nav-header__item">
+                            <a href="/pages/live-broadcast/panda.html" class="nav-header__link nav-header__link--active">Zoos</a>
+                        </li>
+                        <li class="nav-header__item">
+                            <a href="/pages/map/map.html" class="nav-header__link">Map</a>
+                        </li>
+                        <li class="nav-header__item">
+                            <a href="#contact-us" class="nav-header__link">Contact Us</a>
+                        </li>
+                        <li class="nav-header__item">
+                            <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp" class="nav-header__link">Design</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__container">
+                    <div class="header__burger burger">
+                        <span class="burger__line burger__line--first"></span>
+                        <span class="burger__line burger__line--second"></span>
+                        <span class="burger__line burger__line--third"></span>
+                    </div>
+    
+                    <div class="header__radio">
+                        <div class="design-toggle__counter">
+                            <input type="range" class="design-toggle__range" min="0" max="1" step="1">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <aside class="main__side-menu side-menu">
+            <div class="side-menu__wrapper">
+                <div class="side-menu__up-arrow">
+                    <img src="/assets/images/live-broadcast/side-menu/arrow-up.svg" alt="uparr">
+                </div>
+
+                <div class="side-menu__content">
+                    <ul class="side-menu__list">
+                        <li class="side-menu__item" title="animal-name: panda.">
+                            <img class="side-menu__img" src="/assets/images/live-broadcast/side-menu/panda.png" alt="panda">
+                        </li>
+                        <li class="side-menu__item" title="animal-name: eagle.">
+                            <img class="side-menu__img" src="/assets/images/live-broadcast/side-menu/eagle.png" alt="eagle">
+                        </li>
+                        <li class="side-menu__item side-menu__item--active" title="animal-name: alligator.">
+                            <img class="side-menu__img" src="/assets/images/live-broadcast/side-menu/alligator.png" alt="alligator">
+                        </li>
+                        <li class="side-menu__item" title="animal-name: gorilla.">
+                            <img class="side-menu__img" src="/assets/images/live-broadcast/side-menu/gorilla.png" alt="gorilla">
+                        </li>
+                        <li class="side-menu__item" title="animal-name: tiger.">
+                            <img class="side-menu__img" src="/assets/images/live-broadcast/side-menu/tiger.png" alt="tiger">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="side-menu__down-arrow">
+                    <img src="/assets/images/live-broadcast/side-menu/arrow-down.svg" alt="darr">
+                </div>
+
+            </div>
+            
+        </aside>
+        
+        <div class="main__the-zoo">
+            <div class="main__title">
+                Alligator and Spoonbill Swamp Webcam
+            </div>
+
+            <div class="main__content">
+                <div class="videos">
+                    <div class="videos__main">
+                        <div class="videos__wrapper">
+                            <div class="videos__cap"></div>
+                            <div class="video">
+                                <iframe class="video__media" src="https://www.youtube.com/embed/EnxRJii_dp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="videos__carusel">
+                        <div class="videos__slides">
+                            <div class="videos__slide">
+                                <div class="videos__wrapper">
+                                    <div class="videos__cap"></div>
+                                    <div class="video">
+                                        <figure>
+                                            <img class="video__media" src="https://i.ytimg.com/vi/EnxRJii_dp8/mqdefault.jpg" alt="pandas">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="videos__slide">
+                                <div class="videos__wrapper">
+                                    <div class="videos__cap"></div>
+                                    <div class="video">
+                                        <figure>
+                                            <img class="video__media" src="https://i.ytimg.com/vi/EnxRJii_dp8/mqdefault.jpg" alt="pandas">
+                                        </figure>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="videos__slide">
+                                <div class="videos__wrapper">
+                                    <div class="videos__cap"></div>
+                                    <div class="video">
+                                        <figure>
+                                            <img class="video__media" src="https://i.ytimg.com/vi/EnxRJii_dp8/mqdefault.jpg" alt="pandas">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="videos__dots">
+                        <li class="videos__dot videos__dot--active" data-slide-to=""></li>
+                        <li class="videos__dot" data-slide-to=""></li>
+                        <li class="videos__dot" data-slide-to=""></li>
+                    </ul>
+                </div>
+    
+                <div class="main__right-side">
+                    <div class="main__description">
+                        <h3 class="main__descr-title">Population:</h3>  
+                        <p class="main__descr-subtitle">Roughly 1.25 million</p>
+                        <h3 class="main__descr-title">Habitat:</h3>
+                        <p class="main__descr-subtitle">Alligators can be found in slow-moving rivers, ponds, lakes and swamps</p>
+                        <h3 class="main__descr-title">Diet:</h3>
+                        <p class="main__descr-subtitle">
+                            Their diets include prey species that are abundant and easily accessible. Juvenile alligators eat primarily insects, amphibians, small fish, and other invertebrates. Adult alligators eat rough fish, snakes, turtles, small mammals, and birds.
+                        </p>
+                    </div>
+                    <button class="main__button main-btn">feed</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__logo logo" title="(Online Zoo, Yem Digital, Rolling Scopes School)">
+                <div class="logo__bg"></div>
+            </div>
+
+            <div class="footer__contact-us contact-us" id="contact-us">
+                <h3 class="contact-us__title">Contact us</h3>
+
+                <form action="" class="contact-us__form form" name="contact-us__form">
+                    <fieldset class="form__wrapper">
+                        <p class="form__info">
+                            <input type="text" class="form__field" placeholder="Name" required>
+                            <input type="email" class="form__field" placeholder="Email" required>
+                            <fieldset class="form__areafield">
+                                <legend class="form__legend">Please enter your message</legend>
+                                <textarea name="" id="" cols="45" rows="10" maxlength="280" class="form__areafield-textarea" required></textarea>
+                            </fieldset>
+                            <label class="form__label">
+                                <input type="checkbox" value="option1" class="form__checkbox" required>
+                                <span class="form__checkbox-text">I agree to the processing of Personal Data</span>
+                            </label>
+                            <button type="submit" class="form__button"><span class="form__button-text">send</span><img class="form__arr" src="/assets/images/landing/footer/arrow.svg" alt="arr"></button>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+
+            <nav class="footer__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/pages/live-broadcast/panda.html" class="nav__link">Zoos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/pages/map/map.html" class="nav__link">Map</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp" class="nav__link">Design</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+            <div class="footer__zoo-centre zoo-centre">
+
+                <h3 class="zoo-centre__title">ZOO Online Centre</h3>
+                
+                <div class="zoo-centre__content">
+                    <p class="zoo-centre__addr">132, Address District, Street</p>
+                    <p class="zoo-centre__daily">Open Daily 10:00 am - 5:00 pm</p>
+                </div>
+
+                <address class="zoo-centre__info">
+
+                    <div class="zoo-centre__tel">
+                        <a href="tel:+7021633433">T(702) 163-3433</a>
+                    </div>
+
+                    <div class="zoo-centre__mail">
+                        <a href="mailto:zoo.online@gmail.com">example@gmail.com</a>
+                    </div>
+                     
+                </address>
+
+                <div class="zoo-centre__social-networks social-networks">
+                    <ul class="social-networks__list">
+                        <li class="social-networks__item"><a target="_blank" href="https://www.instagram.com/" class="social-networks__link instagram"></a></li>
+                        <li class="social-networks__item"><a target="_blank" href="https://twitter.com/" class="social-networks__link twitter"></a></li>
+                        <li class="social-networks__item"><a target="_blank" href="https://vk.com/" class="social-networks__link vk"></a></li>
+                        <li class="social-networks__item"><a target="_blank" href="https://www.youtube.com/" class="social-networks__link youtube"></a></li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+
+            <button class="main-btn footer__button">donate for volunteers</button>
+
+            <div class="footer__copyrights">
+                <div class="wrapper">
+                    <div class="copyrights__body">
+                        <p class="copyrights__name">©Noora Sagnayeva</p>
+                        <p class="copyrights__name">©RSSchool and ©Yem Digital - 2021</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
