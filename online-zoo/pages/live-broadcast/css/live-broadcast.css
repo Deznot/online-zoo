@@ -91,6 +91,7 @@
   text-decoration: underline;
   font-weight: 900;
   cursor: default;
+  pointer-events: none;
 }
 
 .logo-header {
@@ -652,4 +653,4 @@
 }
 
 /*footer end*/
-/*# sourceMappingURL=pands.css.map */
+/*# sourceMappingURL=live-broadcast.css.map */
