@@ -398,6 +398,12 @@ fieldset {
   margin: 0;
 }
 
+input:invalid, textarea:invalid, input:required, textarea:required {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /* roboto-regular - latin */
 @font-face {
   font-family: 'Roboto';

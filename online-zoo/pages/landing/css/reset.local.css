@@ -54,4 +54,10 @@ fieldset {
   padding: 0;
   margin: 0;
 }
+
+input:invalid, textarea:invalid, input:required, textarea:required {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 /*# sourceMappingURL=reset.local.css.map */

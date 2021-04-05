@@ -144,6 +144,8 @@
 .info-item {
   position: relative;
   margin-right: 46px;
+  -webkit-transition: width 2s linear;
+  transition: width 2s linear;
 }
 
 .info-item:last-child {
@@ -158,6 +160,8 @@
 
 .info-item__photo {
   width: 140px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
 }
 
 .info-item__info {
@@ -233,8 +237,8 @@
 }
 
 .intro__item {
-  -webkit-transition: .2s linear;
-  transition: .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 .intro__item--active .info-item__photo {
@@ -245,10 +249,16 @@
   display: block;
 }
 
-.intro__item:hover {
+.intro__item:hover:not(.intro__item--active) {
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+}
+
+.intro__item:hover:not(.intro__item--active) .info-item__info {
+  display: block;
+}
+
+.intro__item:hover:not(.intro__item--active) .info-item__photo {
+  width: 245px;
 }
 
 .intro__counter {
