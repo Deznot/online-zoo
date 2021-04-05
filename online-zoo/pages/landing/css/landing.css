@@ -1,6 +1,6 @@
 /* Header style start*/
 .header__wrapper {
-  height: 96px;
+  height: 94px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,6 +28,12 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .header__wrapper {
+    margin: 0 150px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
   .header__wrapper {
     margin: 0 150px;
   }
@@ -90,10 +96,12 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 12px;
+  margin-right: 7px;
 }
 
 .nav-header__item {
-  margin-right: 122px;
+  margin-right: 83px;
 }
 
 .nav-header__item:last-child {
@@ -108,7 +116,7 @@
 
 @media only screen and (min-width: 1920px) {
   .nav-header__item {
-    margin-right: 122px;
+    margin-right: 83px;
   }
 }
 
@@ -155,8 +163,8 @@
 .info-item__info {
   display: none;
   position: absolute;
-  left: 25px;
-  bottom: 30px;
+  left: 21px;
+  bottom: 44px;
   width: 194px;
 }
 
@@ -208,8 +216,8 @@
 .intro__slider-wrapper {
   position: absolute;
   min-width: 1087px;
-  left: 820px;
-  top: 406px;
+  left: 840px;
+  top: 418px;
   overflow: hidden;
   background: url("/assets/images/landing/intro/slider/line.svg") no-repeat left center;
 }
@@ -246,7 +254,7 @@
 .intro__counter {
   position: absolute;
   top: 778px;
-  left: 1143px;
+  left: 1158px;
   width: 245px;
   margin: 0;
   text-align: center;
@@ -291,7 +299,7 @@
 }
 
 .intro__social-networks .social-networks__item {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 @media only screen and (max-width: 639px) {
@@ -314,6 +322,13 @@
   }
 }
 
+@media only screen and (min-width: 1920px) {
+  .intro__social-networks {
+    top: 722px;
+    left: 152px;
+  }
+}
+
 /* intro style end*/
 /* how_it_works start*/
 .how-it-works {
@@ -332,7 +347,6 @@
   line-height: 56px;
   color: #333333;
   margin-bottom: 30px;
-  text-align: center;
 }
 
 .how-it-works__text {
@@ -347,7 +361,7 @@
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .how-it-works__slider-inner {
@@ -478,7 +492,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .pets-in-zoo__slider-wrapper {
@@ -658,6 +672,7 @@
   font-size: 20px;
   line-height: 23px;
   text-align: center;
+  letter-spacing: 0.1px;
 }
 
 .pay-and-feed__card:last-child {
@@ -680,7 +695,7 @@
   line-height: 56px;
   text-align: center;
   color: #333333;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
 }
 
 .testimonials__slider {
@@ -803,9 +818,9 @@
 }
 
 .map__content {
-  margin-bottom: 35px;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .map__button {
@@ -1083,6 +1098,12 @@
 @media only screen and (min-width: 640px) {
   .footer__copyrights .copyrights__body {
     padding: 28px 0 48px 0;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .footer__copyrights .copyrights__body {
+    padding: 28px 0 66px 0;
   }
 }
 

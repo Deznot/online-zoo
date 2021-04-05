@@ -429,7 +429,7 @@ img {
         background: transparent;
         border: 0;
         border-bottom: 1px solid #BDBDBD;
-        margin-bottom: 20px;
+        margin-bottom: 18px;
         padding-bottom: 10px;
         outline: none;
         color: #E0E0E0;
@@ -450,6 +450,7 @@ img {
         margin-bottom: 25px;
         padding-inline-start: 0.30em;
         padding-inline-end: 0.75em;
+        max-height: 124px;
     }
 
     &__legend {
@@ -457,6 +458,7 @@ img {
     }
 
     &__areafield-textarea {
+        max-height: 115px;
         width: 100%;
         height: 100%;
         outline: none;
@@ -477,7 +479,7 @@ img {
         font-size: 12px;
         line-height: 14px;
         color: #BDBDBD;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         &>input:not(:disabled):active+span::before {
             background-color: #b3d7ff;
             border-color: #b3d7ff;
@@ -534,6 +536,7 @@ img {
         line-height: 16px;
         color: #FEFEFE;
         margin-left: auto;
+        margin-right: 17px;
     }
 
     &__button-text {
@@ -589,3 +592,4 @@ img {
 }
 
 /* footer end*/
+

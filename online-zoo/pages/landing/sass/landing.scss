@@ -2,7 +2,7 @@
 .header {
 
     &__wrapper {
-        height: 96px;
+        height: 94px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -18,7 +18,7 @@
             margin: 0 150px;
         } 
         @media only screen and (min-width: 1920px){
-        
+            margin: 0 150px;
         }
     }
 
@@ -79,10 +79,12 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        margin-top: 12px;
+        margin-right: 7px;
     }
 
     &__item {
-        margin-right: 122px;
+        margin-right: 83px;
         &:last-child {
             margin-right: 0px;
         }
@@ -93,7 +95,7 @@
         
         } 
         @media only screen and (min-width: 1920px){
-            margin-right: 122px;
+            margin-right: 83px;
         }
     }
 
@@ -136,8 +138,8 @@
     &__info {
         display: none;
         position: absolute;
-        left: 25px;
-        bottom: 30px;
+        left: 21px;
+        bottom: 44px;
         width: 194px;
     }
     &__description {
@@ -187,8 +189,8 @@
     &__slider-wrapper {
         position: absolute;
         min-width: 1087px;
-        left: 820px;
-        top: 406px;
+        left: 840px;
+        top: 418px;
         overflow: hidden;
         background: url('/assets/images/landing/intro/slider/line.svg') no-repeat left center;
     }
@@ -220,7 +222,7 @@
     &__counter {
         position: absolute;
         top: 778px;
-        left: 1143px;
+        left: 1158px;
         width: 245px;
         margin: 0;
         text-align: center;
@@ -258,7 +260,7 @@
         }
 
         .social-networks__item {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         @media only screen and (max-width: 639px) {
@@ -276,7 +278,8 @@
         } 
 
         @media only screen and (min-width: 1920px){
-            
+            top: 722px;
+            left: 152px;
         }
     }
 
@@ -298,7 +301,6 @@
         line-height: 56px;
         color: #333333;
         margin-bottom: 30px;
-        text-align: center;
     }
 
     &__text {
@@ -313,7 +315,7 @@
             overflow: hidden;
             width: 100%;
             margin: 0 auto;
-            margin-bottom: 30px;
+            margin-bottom: 24px;
         }
         &-inner {
             display: flex;
@@ -432,7 +434,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         &-wrapper {
             overflow: hidden;
             max-width: 1200px;
@@ -573,6 +575,7 @@
             font-size: 20px;
             line-height: 23px;
             text-align: center;
+            letter-spacing: 0.1px;
         }
 
         &:last-child {
@@ -596,7 +599,7 @@
         line-height: 56px;
         text-align: center;
         color: #333333;
-        margin-bottom: 50px;
+        margin-bottom: 42px;
     }
     &__slider {
         display: flex;
@@ -694,9 +697,9 @@
         margin-bottom: 60px;
     }
     &__content {
-        margin-bottom: 35px;
         max-width: 1200px;
         margin: 0 auto;
+        margin-bottom: 30px;
     }
 
     &__button {
@@ -910,7 +913,9 @@
 
         } 
         @media only screen and (min-width: 1900px){
-        
+            .copyrights__body {
+                padding: 28px 0 66px 0;
+            }
         }
     }
 
