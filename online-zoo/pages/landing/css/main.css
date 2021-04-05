@@ -409,7 +409,7 @@ input:invalid, textarea:invalid, input:required, textarea:required {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("/assets/fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("/assets/fonts/roboto-v20-latin-regular.woff") format("woff");
+  src: local(""), url("../../../assets/fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../../../assets/fonts/roboto-v20-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -418,7 +418,7 @@ input:invalid, textarea:invalid, input:required, textarea:required {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: local(""), url("/assets/fonts/roboto-v20-latin-900.woff2") format("woff2"), url("/assets/fonts/roboto-v20-latin-900.woff") format("woff");
+  src: local(""), url("../../../assets/fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../../../assets/fonts/roboto-v20-latin-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -427,7 +427,7 @@ input:invalid, textarea:invalid, input:required, textarea:required {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: local(""), url("/assets/fonts/roboto-v20-latin-500.woff2") format("woff2"), url("/assets/fonts/roboto-v20-latin-500.woff") format("woff");
+  src: local(""), url("../../../assets/fonts/roboto-v20-latin-500.woff2") format("woff2"), url("../../../assets/fonts/roboto-v20-latin-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -545,19 +545,19 @@ img {
 }
 
 .instagram {
-  background: url("/assets/images/global/social-net/instagram.svg") no-repeat center;
+  background: url("../../../assets/images/global/social-net/instagram.svg") no-repeat center;
 }
 
 .twitter {
-  background: url("/assets/images/global/social-net/twitter.svg") no-repeat center;
+  background: url("../../../assets/images/global/social-net/twitter.svg") no-repeat center;
 }
 
 .youtube {
-  background: url("/assets/images/global/social-net/youtube.svg") no-repeat center;
+  background: url("../../../assets/images/global/social-net/youtube.svg") no-repeat center;
 }
 
 .vk {
-  background: url("/assets/images/global/social-net/vk.svg") no-repeat center;
+  background: url("../../../assets/images/global/social-net/vk.svg") no-repeat center;
 }
 
 .counter {
@@ -806,7 +806,7 @@ img {
 .logo__bg {
   width: 100%;
   height: 100%;
-  background: url("/assets/images/global/logo/logo-dark.svg") no-repeat center;
+  background: url("../../../assets/images/global/logo/logo-dark.svg") no-repeat center;
 }
 
 .burger__line {

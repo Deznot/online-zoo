@@ -187,14 +187,14 @@
 .intro {
   height: 940px;
   position: relative;
-  background: url("/assets/images/landing/intro/intro-bg.png") no-repeat center;
+  background: url("../../../assets/images/landing/intro/intro-bg.png") no-repeat center;
   background-size: cover;
   overflow: hidden;
 }
 
 @media only screen and (max-width: 1200px) {
   .intro {
-    background: url("/assets/images/landing/intro/intro-bg-1200.png") no-repeat center;
+    background: url("../../../assets/images/landing/intro/intro-bg-1200.png") no-repeat center;
     background-size: cover;
   }
 }
@@ -223,7 +223,7 @@
   left: 840px;
   top: 418px;
   overflow: hidden;
-  background: url("/assets/images/landing/intro/slider/line.svg") no-repeat left center;
+  background: url("../../../assets/images/landing/intro/slider/line.svg") no-repeat left center;
 }
 
 .intro__slider {
@@ -902,7 +902,7 @@
 }
 
 .footer__logo .logo__bg {
-  background: url("/assets/images/global/logo/logo-white.svg") no-repeat center;
+  background: url("../../../assets/images/global/logo/logo-white.svg") no-repeat center;
 }
 
 @media only screen and (max-width: 639px) {

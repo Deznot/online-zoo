@@ -1,3 +1,4 @@
+@import "./path.scss";
 /* Header style start*/
 .header {
 
@@ -161,11 +162,11 @@
 .intro {
     height: 940px;
     position: relative;
-    background: url('/assets/images/landing/intro/intro-bg.png') no-repeat center;
+    background: url($path+'/assets/images/landing/intro/intro-bg.png') no-repeat center;
     background-size: cover;
     overflow: hidden;
     @media only screen and (max-width: 1200px) {
-        background: url('/assets/images/landing/intro/intro-bg-1200.png') no-repeat center;
+        background: url($path+'/assets/images/landing/intro/intro-bg-1200.png') no-repeat center;
         background-size: cover;
     } 
 
@@ -194,7 +195,7 @@
         left: 840px;
         top: 418px;
         overflow: hidden;
-        background: url('/assets/images/landing/intro/slider/line.svg') no-repeat left center;
+        background: url($path+'/assets/images/landing/intro/slider/line.svg') no-repeat left center;
     }
 
     &__slider {
@@ -776,7 +777,7 @@
     &__logo {
         grid-area: logo;
         .logo__bg {
-            background: url('/assets/images/global/logo/logo-white.svg') no-repeat center;
+            background: url($path+'/assets/images/global/logo/logo-white.svg') no-repeat center;
         }
         @media only screen and (max-width: 639px) {
             margin-bottom: 30px;

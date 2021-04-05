@@ -1,5 +1,6 @@
 @import "./normalize.scss";
 @import "./reset.local.scss";
+@import "../../landing/sass/path.scss";
   
 /* roboto-regular - latin */
 @font-face {
@@ -7,8 +8,8 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('/assets/fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('/assets/fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url($path+'/assets/fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url($path+'/assets/fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
   
 /* roboto-900 - latin */
@@ -17,8 +18,8 @@
     font-style: normal;
     font-weight: 900;
     src: local(''),
-            url('/assets/fonts/roboto-v20-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-            url('/assets/fonts/roboto-v20-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            url($path+'/assets/fonts/roboto-v20-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url($path+'/assets/fonts/roboto-v20-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
  /* roboto-500 - latin */
@@ -27,8 +28,8 @@
     font-style: normal;
     font-weight: 500;
     src: local(''),
-         url('/assets/fonts/roboto-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('/assets/fonts/roboto-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url($path+'/assets/fonts/roboto-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url($path+'/assets/fonts/roboto-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
 html {
@@ -133,16 +134,16 @@ img {
 }
 
 .instagram{
-    background: url('/assets/images/global/social-net/instagram.svg') no-repeat center;
+    background: url($path+'/assets/images/global/social-net/instagram.svg') no-repeat center;
 }
 .twitter{
-    background: url('/assets/images/global/social-net/twitter.svg') no-repeat center;
+    background: url($path+'/assets/images/global/social-net/twitter.svg') no-repeat center;
 }
 .youtube {
-    background: url('/assets/images/global/social-net/youtube.svg') no-repeat center;
+    background: url($path+'/assets/images/global/social-net/youtube.svg') no-repeat center;
 }
 .vk {
-    background: url('/assets/images/global/social-net/vk.svg') no-repeat center;
+    background: url($path+'/assets/images/global/social-net/vk.svg') no-repeat center;
 }
 
 .counter {
@@ -379,7 +380,7 @@ img {
     &__bg {
         width: 100%;
         height: 100%;
-        background: url('/assets/images/global/logo/logo-dark.svg') no-repeat center;
+        background: url($path+'/assets/images/global/logo/logo-dark.svg') no-repeat center;
     }
 }
 

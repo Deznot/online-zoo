@@ -267,7 +267,7 @@
 .side-menu__item--active {
   width: 157px;
   height: 157px;
-  background: url("/assets/images/desktopLight/zoos_page/side-menu/active-background.svg") no-repeat center;
+  background: url("../../../assets/images/desktopLight/zoos_page/side-menu/active-background.svg") no-repeat center;
 }
 
 .side-menu__item--active .side-menu__img {
@@ -448,7 +448,7 @@
 }
 
 .footer__logo .logo__bg {
-  background: url("/assets/images/global/logo/logo-white.svg") no-repeat center;
+  background: url("../../../assets/images/global/logo/logo-white.svg") no-repeat center;
 }
 
 @media only screen and (max-width: 639px) {
