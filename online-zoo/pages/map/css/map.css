@@ -98,7 +98,7 @@
 }
 
 .nav-header__item {
-  margin-right: 122px;
+  margin-right: 84px;
 }
 
 .nav-header__item:last-child {
@@ -113,7 +113,7 @@
 
 @media only screen and (min-width: 1920px) {
   .nav-header__item {
-    margin-right: 122px;
+    margin-right: 84px;
   }
 }
 
@@ -178,7 +178,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
 
 .map-slider__wrapper {
@@ -285,7 +285,7 @@
 }
 
 .main__map {
-  margin-bottom: 46px;
+  margin-bottom: 42px;
 }
 
 .main__button {
@@ -563,6 +563,12 @@
 @media only screen and (min-width: 640px) {
   .footer__copyrights .copyrights__body {
     padding: 28px 0 48px 0;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .footer__copyrights .copyrights__body {
+    padding: 28px 0 66px 0;
   }
 }
 
