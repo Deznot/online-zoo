@@ -1,7 +1,6 @@
 @import "./path.scss";
 /* Header style start*/
 .header {
-
     &__wrapper {
         height: 94px;
         display: flex;
@@ -9,43 +8,28 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 150px;
-        @media only screen and (max-width: 639px) {
-            margin: 0 10px;
+        @media only screen and (max-width: 1200px) {
+            margin: 0px 12.7%;
         }
-        @media only screen and (min-width: 640px) {
+        @media only screen and (max-width: 640px) {
             margin: 0 20px;
-        } 
-        @media only screen and (min-width: 1200px) {
-            margin: 0 150px;
-        } 
-        @media only screen and (min-width: 1920px){
-            margin: 0 150px;
+        }
+        @media only screen and (max-width: 320px) {
+            margin: 0 10px;
         }
     }
 
     &__logo {
-        @media only screen and (max-width: 639px) {
-            margin-right: 100px;
-        }
-        @media only screen and (min-width: 640px) {
-
-        } 
-        @media only screen and (min-width: 1200px) {
-        
-        } 
-        @media only screen and (min-width: 1920px){
-        
-        }
     }
 
     &__nav {
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
             display: none;
         }
     }
 
     &__container {
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
            display: flex;
            align-items: center;
            justify-content: flex-end;
@@ -59,6 +43,12 @@
         img {
             object-fit: cover;
         }
+        @media only screen and (max-width: 640px) {
+            margin-right: 34px;
+        }
+        @media only screen and (max-width: 640px) {
+            margin-right: 24px;
+        }
         
     }
 
@@ -67,9 +57,8 @@
         position: relative;
         width: 40px;
         height: 21px;
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
             display: block;
-            margin-right: 26px;
         }
     }
  
@@ -80,8 +69,10 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         margin-top: 12px;
         margin-right: 7px;
+        width: 48vw;
     }
 
     &__item {
@@ -89,15 +80,9 @@
         &:last-child {
             margin-right: 0px;
         }
-        @media only screen and (min-width: 640px) {
-            margin-right: 73px;
+        @media only screen and (max-width: 1200px) {
+            margin-right: 0;
         } 
-        @media only screen and (min-width: 1200px) {
-        
-        } 
-        @media only screen and (min-width: 1920px){
-            margin-right: 83px;
-        }
     }
 
     &__link {

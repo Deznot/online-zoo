@@ -15,43 +15,31 @@
   margin: 0 150px;
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 1200px) {
   .header__wrapper {
-    margin: 0 10px;
+    margin: 0px 12.7%;
   }
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 640px) {
   .header__wrapper {
     margin: 0 20px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 320px) {
   .header__wrapper {
-    margin: 0 150px;
+    margin: 0 10px;
   }
 }
 
-@media only screen and (min-width: 1920px) {
-  .header__wrapper {
-    margin: 0 150px;
-  }
-}
-
-@media only screen and (max-width: 639px) {
-  .header__logo {
-    margin-right: 100px;
-  }
-}
-
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 640px) {
   .header__nav {
     display: none;
   }
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 640px) {
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -76,6 +64,18 @@
      object-fit: cover;
 }
 
+@media only screen and (max-width: 640px) {
+  .header__radio {
+    margin-right: 34px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .header__radio {
+    margin-right: 24px;
+  }
+}
+
 .header__burger {
   display: none;
   position: relative;
@@ -83,10 +83,9 @@
   height: 21px;
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 640px) {
   .header__burger {
     display: block;
-    margin-right: 26px;
   }
 }
 
@@ -96,8 +95,12 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 12px;
   margin-right: 7px;
+  width: 48vw;
 }
 
 .nav-header__item {
@@ -108,15 +111,9 @@
   margin-right: 0px;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 1200px) {
   .nav-header__item {
-    margin-right: 73px;
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  .nav-header__item {
-    margin-right: 83px;
+    margin-right: 0;
   }
 }
 

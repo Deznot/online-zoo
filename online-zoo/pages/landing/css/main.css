@@ -470,6 +470,7 @@ img {
   border: 0;
 }
 
+/*header start*/
 .design-toggle__range {
   -webkit-appearance: none;
   background: #F1F1F1;
@@ -504,6 +505,7 @@ img {
   -moz-appearance: none;
 }
 
+/* header end */
 .main-btn {
   position: relative;
   width: 245px;

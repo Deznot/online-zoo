@@ -10,42 +10,25 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 150px;
-        @media only screen and (max-width: 639px) {
-            margin: 0 10px;
+        @media only screen and (max-width: 1200px) {
+            margin: 0px 12.7%;
         }
-        @media only screen and (min-width: 640px) {
+        @media only screen and (max-width: 640px) {
             margin: 0 20px;
-        } 
-        @media only screen and (min-width: 1200px) {
-            margin: 0 150px;
-        } 
-        @media only screen and (min-width: 1920px){
-        
         }
-    }
-
-    &__logo {
-        @media only screen and (max-width: 639px) {
-            margin-right: 100px;
-        }
-        @media only screen and (min-width: 640px) {
-        } 
-        @media only screen and (min-width: 1200px) {
-        
-        } 
-        @media only screen and (min-width: 1920px){
-        
+        @media only screen and (max-width: 320px) {
+            margin: 0 10px;
         }
     }
 
     &__nav {
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
             display: none;
         }
     }
 
     &__container {
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
            display: flex;
            align-items: center;
            justify-content: flex-end;
@@ -59,7 +42,12 @@
         img {
             object-fit: cover;
         }
-        
+        @media only screen and (max-width: 640px) {
+            margin-right: 34px;
+        }
+        @media only screen and (max-width: 640px) {
+            margin-right: 24px;
+        }
     }
 
     &__burger {
@@ -67,9 +55,8 @@
         position: relative;
         width: 40px;
         height: 21px;
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
             display: block;
-            margin-right: 26px;
         }
     }
  
@@ -79,22 +66,20 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 12px;
+        margin-right: 7px;
+        width: 48vw;
     }
 
     &__item {
-        margin-right: 84px;
+        margin-right: 83px;
         &:last-child {
             margin-right: 0px;
         }
-        @media only screen and (min-width: 640px) {
-            margin-right: 73px;
+        @media only screen and (max-width: 1200px) {
+            margin-right: 0;
         } 
-        @media only screen and (min-width: 1200px) {
-        
-        } 
-        @media only screen and (min-width: 1920px){
-            margin-right: 84px;
-        }
     }
 
     &__link {
@@ -113,7 +98,6 @@
             pointer-events: none;
         }
     }
-    
 }
 
 .logo-header {
@@ -263,7 +247,7 @@
     &__wrapper {
         margin: 0 auto;
         display: grid;
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
             padding-top: 50px;
             margin: 0 10px;
             grid-template: auto / auto;
@@ -317,7 +301,7 @@
         .logo__bg {
             background: url($path+'/assets/images/global/logo/logo-white.svg') no-repeat center;
         }
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
             margin-bottom: 30px;
         } 
         @media only screen and (min-width: 640px) {
@@ -335,7 +319,7 @@
 
     &__contact-us {
         grid-area: contact-us;
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
             width: 100%;
             margin-bottom: 54px;
         } 
@@ -355,7 +339,7 @@
     &__nav {
         grid-area: nav;
         padding-top: 17px;
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
             margin-bottom: 47px;
             .nav__list {
                 flex-direction: column;
@@ -410,7 +394,7 @@
         grid-area: zoo-centre;
         display: flex;
         flex-direction: column;
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
             margin-bottom: 46px;
         }
         @media only screen and (min-width: 640px) {
@@ -427,7 +411,7 @@
     &__button {
         grid-area: button;
         width: 275px;
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
             margin-bottom: 80px;
             justify-self: center
         } 
@@ -445,7 +429,7 @@
     &__copyrights {
         grid-area: copyrights;
         border-top: 0.5px solid #FEFEFE;
-        @media only screen and (max-width: 639px) {
+        @media only screen and (max-width: 640px) {
             .copyrights__body {
                 padding: 28px 0;
             }
