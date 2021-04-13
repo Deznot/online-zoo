@@ -19,9 +19,6 @@
         }
     }
 
-    &__logo {
-    }
-
     &__nav {
         @media only screen and (max-width: 640px) {
             display: none;
@@ -113,15 +110,38 @@
     position: relative;
     margin-right: 46px;
     transition: width 2s linear;
+    @media only screen and (max-width: 1200px) {
+        margin-right: 2.5vw;
+    }
+    @media only screen and (max-width: 337px) {
+        margin-right: 9px;
+    }
     &:last-child {
         margin-right: 0px;
     }
     &__actions {
         display: flex;
+        // @media only screen and (max-width: 640px) {
+        //     flex-wrap: wrap;
+        // }
+        @media only screen and (max-width: 337px) {
+            flex-direction: column;
+        } 
+
     }
     &__photo {
         width: 140px;
         transition: width 1s;
+        @media only screen and (max-width: 1200px) {
+            width: 180px;
+        } 
+        @media only screen and (max-width: 640px) {
+            width: 28vw;
+            min-width: 113px;
+        }  
+        @media only screen and (max-width: 337px) {
+            width: 113px;
+        } 
     }
     &__info {
         display: none;
@@ -129,6 +149,15 @@
         left: 21px;
         bottom: 44px;
         width: 194px;
+        @media only screen and (max-width: 1200px) {
+            left: 23px;
+            bottom: 33px;
+        }
+        @media only screen and (max-width: 337px) {
+            width: 126px;
+            left: 8px;
+            bottom: 11px;
+        }
     }
     &__description {
         color: #FFFFFF;
@@ -136,12 +165,28 @@
         font-size: 14px;
         line-height: 16px;
         margin-bottom: 14px;
+        @media only screen and (max-width: 337px) {
+            margin-bottom: 6px;
+            width: 126px;
+            font-size: 12px;
+            line-height: 14px;
+        }
     }
 
     &__watch {
         margin-right: 10px;
+        @media only screen and (max-width: 337px) {
+            width: 99px;
+        }
+        @media only screen and (max-width: 337px) {
+            margin-bottom: 6px;
+        }
     }
-    
+    &__donate {
+        @media only screen and (max-width: 337px) {
+            width: 65px;
+        }
+    }
 }
 
 .intro {
@@ -153,12 +198,28 @@
     @media only screen and (max-width: 1200px) {
         background: url($path+'/assets/images/landing/intro/intro-bg-1200.png') no-repeat center;
         background-size: cover;
+        height: 926px;
+    }
+    @media only screen and (max-width: 640px) {
+        height: 934px;
+    }
+    @media only screen and (max-width: 337px) {
+        height: 669px;
     } 
 
     
     &__wrapper {
         margin-left: 360px;
         margin-bottom: 20px;
+        @media only screen and (max-width: 1200px) {
+            margin-left: 12.5vw;
+        } 
+        @media only screen and (max-width: 640px) {
+            margin-left: 22px;
+        }
+        @media only screen and (max-width: 337px) {
+            margin-left: 9px;
+        }
     }
 
     &__title {
@@ -172,21 +233,63 @@
         font-size: 89px;
         line-height: 104px;
         color: #FEFEFE;
+        @media only screen and (max-width: 1200px) {
+            margin-top: 127px;
+            font-size: 7.4vw;
+        }
+        @media only screen and (max-width: 640px) {
+            font-size: 10vw;
+            line-height: 75px;
+            margin-top: 18.5vw;
+            margin-bottom: 5.8vw;
+        }
+        @media only screen and (max-width: 337px) {
+            font-size: 48px;
+            line-height: 56px;
+            margin-top: 89px;
+            margin-bottom: 16px;
+        }
     }
 
     &__slider-wrapper {
         position: absolute;
         min-width: 1087px;
-        left: 840px;
+        min-height: 430px;
+        left: 43.5vw;
         top: 418px;
         overflow: hidden;
-        background: url($path+'/assets/images/landing/intro/slider/line.svg') no-repeat left center;
+        background: url($path+'/assets/images/landing/intro/slider/line.svg') no-repeat left 170px;
+        @media only screen and (max-width: 1200px) {
+            background-position: left 180px;
+            left: initial;
+            top: 432px;
+            right: -1147px;
+        } 
+        @media only screen and (max-width: 640px) {
+            left: 9vw;
+            top: 408px;
+            background-position: left 28.6vw;
+        }
+        @media only screen and (max-width: 337px) {
+            left: 3px;
+            top: 362px;
+            background-position: left 100px;
+        }
+        
     }
 
     &__slider {
         display: flex;
         align-items: center;
         margin-left: 135px;
+        @media only screen and (max-width: 1200px) {
+        } 
+        @media only screen and (max-width: 640px) {
+            margin-left: 12vw;
+        }
+        @media only screen and (max-width: 337px) {
+            margin-left: 21px;
+        }
     }
 
     
@@ -196,29 +299,69 @@
         &--active {
             .info-item__photo {
                 width: 245px;
+                @media only screen and (max-width: 640px) {
+                    width: 38.4vw;
+                }   
+                @media only screen and (max-width: 337px) {
+                    width: 140px;
+                }
             }
             .info-item__info {
                 display: block;
+                @media only screen and (max-width: 640px) {
+                    width: 30.3vw;
+                }  
             }
         }
         &:hover:not(.intro__item--active) {
            cursor: pointer;
             .info-item__info {
                 display: block;
+                @media only screen and (max-width: 640px) {
+                    width: 30.3vw;
+                }  
             }
             .info-item__photo {
                 width: 245px;
+                @media only screen and (max-width: 640px) {
+                    width: 38.4vw;
+                }  
+                @media only screen and (max-width: 337px) {
+                    width: 140px;
+                }
             }
         }
     }
 
     &__counter {
         position: absolute;
-        top: 778px;
-        left: 1158px;
+        top: 361px;
+        left: 325px;
         width: 245px;
         margin: 0;
         text-align: center;
+        @media only screen and (max-width: 1200px) {
+            top: 377px;
+            left: 347px;
+        } 
+        @media only screen and (max-width: 640px) {
+            top: 59vw;
+            left: 44vw;
+            width: 39vw;
+            overflow: hidden;
+        }
+        @media only screen and (max-width: 337px) {
+            width: 140px;
+            top: 67vw;
+            left: 44vw;
+        }
+    }
+
+    &__count {
+        margin-bottom: 5px;
+        @media only screen and (max-width: 337px) {
+            margin-bottom: -7px;
+        }
     }
 
     &__current {
@@ -237,9 +380,18 @@
         }
         &::-webkit-slider-thumb {
             background: #FEFEFE;
+            @media only screen and (max-width: 337px) {
+                width: 17px;
+            }
         }
         &::-moz-range-thumb {
             background: #FEFEFE;
+            @media only screen and (max-width: 337px) {
+                width: 17px;
+            }
+        }
+        @media only screen and (max-width: 337px) {
+            width: 140px;
         }
     }
     
@@ -256,24 +408,19 @@
             margin-bottom: 12px;
         }
 
-        @media only screen and (max-width: 639px) {
-            display: none;
+        @media only screen and (max-width: 1200px) {
+            top: 747px;
+            left: 12.5vw;
         } 
 
-        @media only screen and (min-width: 640px) {
+        @media only screen and (max-width: 640px) {
             left: 20px;
             top: 726px;
         } 
 
-        @media only screen and (min-width: 1200px) {
-            left: 150px;
-            top: 747px;
+        @media only screen and (max-width: 337px) {
+            display: none;
         } 
-
-        @media only screen and (min-width: 1920px){
-            top: 722px;
-            left: 152px;
-        }
     }
 
 
