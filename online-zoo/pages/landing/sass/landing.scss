@@ -440,7 +440,7 @@
         } 
         @media only screen and (max-width: 640px) {
             max-width: 600px;
-            margin: 100px 20px;
+            margin: 100px 20px 68px 20px;
         } 
         @media only screen and (max-width: 320px) {
             margin: 50px 10px;
@@ -566,6 +566,20 @@
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 30px;
         padding: 100px 360px 132px 360px;
+        @media only screen and (max-width: 1200px) {
+            grid-column-gap: 20px;
+            padding: 100px 150px 115px 150px; 
+        }
+        @media only screen and (max-width: 640px) {
+            grid-template-columns: 1fr;
+            padding: 100px 177px;
+            grid-row-gap: 56px;
+        }
+        @media only screen and (max-width: 320px) {
+            grid-template-columns: 1fr;
+            padding: 50px 10px;
+            grid-row-gap: 39px;
+        }
     }
 
     &__card {
@@ -573,10 +587,9 @@
         &-pic {
             display: flex;
             justify-content: center;
-            margin-bottom: 15px;
             width: 80px;
             margin: 0 auto;
-            margin-bottom: 15px;
+            margin-bottom: 9px;
         }
         &-title {
             font-weight: 900;
@@ -589,7 +602,6 @@
         &-descr {
             font-size: 14px;
             line-height: 16px;
-            letter-spacing: -0.1px;
         }
     }
 }
