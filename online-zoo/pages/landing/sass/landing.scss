@@ -113,7 +113,7 @@
     @media only screen and (max-width: 1200px) {
         margin-right: 2.5vw;
     }
-    @media only screen and (max-width: 337px) {
+    @media only screen and (max-width: 320px) {
         margin-right: 9px;
     }
     &:last-child {
@@ -124,7 +124,7 @@
         // @media only screen and (max-width: 640px) {
         //     flex-wrap: wrap;
         // }
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             flex-direction: column;
         } 
 
@@ -139,7 +139,7 @@
             width: 28vw;
             min-width: 113px;
         }  
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             width: 113px;
         } 
     }
@@ -153,7 +153,7 @@
             left: 23px;
             bottom: 33px;
         }
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             width: 126px;
             left: 8px;
             bottom: 11px;
@@ -165,7 +165,7 @@
         font-size: 14px;
         line-height: 16px;
         margin-bottom: 14px;
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             margin-bottom: 6px;
             width: 126px;
             font-size: 12px;
@@ -175,15 +175,15 @@
 
     &__watch {
         margin-right: 10px;
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             width: 99px;
         }
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             margin-bottom: 6px;
         }
     }
     &__donate {
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             width: 65px;
         }
     }
@@ -203,7 +203,7 @@
     @media only screen and (max-width: 640px) {
         height: 934px;
     }
-    @media only screen and (max-width: 337px) {
+    @media only screen and (max-width: 320px) {
         height: 669px;
     } 
 
@@ -217,7 +217,7 @@
         @media only screen and (max-width: 640px) {
             margin-left: 22px;
         }
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             margin-left: 9px;
         }
     }
@@ -243,7 +243,7 @@
             margin-top: 18.5vw;
             margin-bottom: 5.8vw;
         }
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             font-size: 48px;
             line-height: 56px;
             margin-top: 89px;
@@ -270,7 +270,7 @@
             top: 408px;
             background-position: left 28.6vw;
         }
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             left: 3px;
             top: 362px;
             background-position: left 100px;
@@ -287,7 +287,7 @@
         @media only screen and (max-width: 640px) {
             margin-left: 12vw;
         }
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             margin-left: 21px;
         }
     }
@@ -302,7 +302,7 @@
                 @media only screen and (max-width: 640px) {
                     width: 38.4vw;
                 }   
-                @media only screen and (max-width: 337px) {
+                @media only screen and (max-width: 320px) {
                     width: 140px;
                 }
             }
@@ -326,7 +326,7 @@
                 @media only screen and (max-width: 640px) {
                     width: 38.4vw;
                 }  
-                @media only screen and (max-width: 337px) {
+                @media only screen and (max-width: 320px) {
                     width: 140px;
                 }
             }
@@ -350,7 +350,7 @@
             width: 39vw;
             overflow: hidden;
         }
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             width: 140px;
             top: 67vw;
             left: 44vw;
@@ -359,7 +359,7 @@
 
     &__count {
         margin-bottom: 5px;
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             margin-bottom: -7px;
         }
     }
@@ -380,17 +380,17 @@
         }
         &::-webkit-slider-thumb {
             background: #FEFEFE;
-            @media only screen and (max-width: 337px) {
+            @media only screen and (max-width: 320px) {
                 width: 17px;
             }
         }
         &::-moz-range-thumb {
             background: #FEFEFE;
-            @media only screen and (max-width: 337px) {
+            @media only screen and (max-width: 320px) {
                 width: 17px;
             }
         }
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             width: 140px;
         }
     }
@@ -418,7 +418,7 @@
             top: 726px;
         } 
 
-        @media only screen and (max-width: 337px) {
+        @media only screen and (max-width: 320px) {
             display: none;
         } 
     }
@@ -432,8 +432,20 @@
 
 .how-it-works {
     &__content {
-        min-width: 790px;
-        margin: 100px 564px;
+        max-width: 790px;
+        margin: 100px auto;
+        @media only screen and (max-width: 1200px) {
+            max-width: 746px;
+            margin: 100px 19vw;
+        } 
+        @media only screen and (max-width: 640px) {
+            max-width: 600px;
+            margin: 100px 20px;
+        } 
+        @media only screen and (max-width: 320px) {
+            margin: 50px 10px;
+            max-width: 300px;
+        }
     }
     &__title {
         font-weight: 900;
@@ -441,6 +453,11 @@
         line-height: 56px;
         color: #333333;
         margin-bottom: 30px;
+        @media only screen and (max-width: 320px) {
+            font-size: 36px;
+            line-height: 42px;
+            margin-bottom: 20px;
+        }
     }
 
     &__text {
@@ -449,13 +466,29 @@
         line-height: 16px;
         color: #4F4F4F;
         margin-bottom: 30px;
+        @media only screen and (max-width: 1200px) {
+            margin-bottom: 14px;
+        } 
+        @media only screen and (max-width: 640px) {
+            margin-bottom: 30px;
+        }
+        @media only screen and (max-width: 320px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
     &__slider {
         &-wrapper {
             overflow: hidden;
             width: 100%;
             margin: 0 auto;
-            margin-bottom: 24px;
+            margin-bottom: 30px;
+            @media only screen and (max-width: 640px) {
+                max-width: 600px;
+            }
+            @media only screen and (max-width: 320px) {
+                margin-bottom: 13px
+            }
         }
         &-inner {
             display: flex;
@@ -463,13 +496,37 @@
         &-counter {
             text-align: center;
             margin-bottom: 30px;
+            @media only screen and (max-width: 320px) {
+                margin-bottom: 20px;
+            }
         }
     }
     &__slide {
-        min-width: 790px;
+        min-width: 100%;
+    }
+
+    &__slide-img {
+        height: 323px;
+        @media only screen and (max-width: 640px) {
+            max-width: initial;
+            width: initial;
+        }
+        @media only screen and (max-width: 320px) {
+            object-fit: contain;
+        }
     }
 
     /* how-it-works counter start */
+    &__counter {
+        @media only screen and (max-width: 320px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__count {
+        margin-bottom: 7px;
+    }
+
     &__range {
         &::-webkit-slider-thumb {
             width: 62px;
@@ -481,25 +538,7 @@
             height: 10px;
         }
 
-        @media only screen and (min-width: 320px) and (max-width: 639px) {
-            &::-webkit-slider-thumb {
-                width: 80px;
-            }
-
-            &::-moz-range-thumb {
-                width: 80px;
-            }
-        } 
-        @media only screen and (min-width: 640px) and (max-width: 1199.98px) {
-            &::-webkit-slider-thumb {
-                width: 80px;
-            }
-
-            &::-moz-range-thumb {
-                width: 80px;
-            }
-        } 
-        @media only screen and (min-width: 1200px) and (max-width: 1919.98px) {
+        @media only screen and (max-width: 1200px) {
             &::-webkit-slider-thumb {
                 width: 80px;
             }
