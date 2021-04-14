@@ -772,13 +772,13 @@
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
-  padding: 100px 360px 132px 360px;
+  padding: 5.2vw 18.7vw 6.9vw 18.7vw;
 }
 
 @media only screen and (max-width: 1200px) {
   .inspiring__cards {
     grid-column-gap: 20px;
-    padding: 100px 150px 115px 150px;
+    padding: 8.4vw 12.5vw 9.5vw 12.5vw;
   }
 }
 
@@ -786,7 +786,7 @@
   .inspiring__cards {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    padding: 100px 177px;
+    padding: 15.5vw 27.5vw;
     grid-row-gap: 56px;
   }
 }
@@ -845,6 +845,13 @@
   margin-bottom: 35px;
 }
 
+@media only screen and (max-width: 320px) {
+  .pets-in-zoo__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
 .pets-in-zoo__slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -858,9 +865,41 @@
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 640px) {
+  .pets-in-zoo__slider {
+    margin: 0 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pets-in-zoo__slider {
+    margin: 0 10px;
+    margin-bottom: 19px;
+  }
+}
+
 .pets-in-zoo__slider-wrapper {
   overflow: hidden;
   max-width: 1200px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pets-in-zoo__slider-wrapper {
+    max-width: 900px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .pets-in-zoo__slider-wrapper {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pets-in-zoo__slider-wrapper {
+    max-width: 300px;
+  }
 }
 
 .pets-in-zoo__slider-inner {
@@ -873,6 +912,12 @@
   margin-right: 20px;
 }
 
+@media only screen and (max-width: 640px) {
+  .pets-in-zoo__slider-left-arrow {
+    display: none;
+  }
+}
+
 .pets-in-zoo__slider-left-arrow:hover {
   cursor: pointer;
   -webkit-transform: scale(1.3);
@@ -881,6 +926,12 @@
 
 .pets-in-zoo__slider-right-arrow {
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .pets-in-zoo__slider-right-arrow {
+    display: none;
+  }
 }
 
 .pets-in-zoo__slider-right-arrow:hover {
@@ -899,6 +950,12 @@
   margin-right: 30px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .pets-in-zoo__slide {
+    margin-right: 20px;
+  }
+}
+
 .pets-in-zoo__slide:last-child {
   margin-right: 0px;
 }
@@ -907,6 +964,19 @@
   opacity: 1;
   bottom: 46px;
   left: 22px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pets-in-zoo__slide--active .pets-in-zoo__info {
+    bottom: 35px;
+    left: 8px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pets-in-zoo__slide--active .pets-in-zoo__info {
+    bottom: 39px;
+  }
 }
 
 .pets-in-zoo__slide:hover .pets-in-zoo__photo {
@@ -920,8 +990,27 @@
   left: 22px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .pets-in-zoo__slide:hover .pets-in-zoo__info {
+    bottom: 35px;
+    left: 8px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pets-in-zoo__slide:hover .pets-in-zoo__info {
+    bottom: 39px;
+  }
+}
+
 .pets-in-zoo__photo {
   min-width: 278px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pets-in-zoo__photo {
+    min-width: 210px;
+  }
 }
 
 .pets-in-zoo__info {
@@ -950,6 +1039,18 @@
 
 .pets-in-zoo__watch {
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 320px) {
+  .pets-in-zoo__counter {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .pets-in-zoo__counter {
+    margin-bottom: 32px;
+  }
 }
 
 .pets-in-zoo__button {
