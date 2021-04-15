@@ -1092,9 +1092,21 @@
         margin-bottom: 60px;
     }
     &__content {
-        max-width: 1200px;
+        max-width: 62.5vw;
         margin: 0 auto;
         margin-bottom: 30px;
+        // @media only screen and (max-width: 1200px) {
+        //     max-width: 900px;
+        //     height: 436px;
+        // }
+        // @media only screen and (max-width: 640px) {
+        //     max-width: 600px;
+        //     min-height: 290px;
+        // }
+        // @media only screen and (max-width: 320px) {
+        //     max-width: 300px;
+        //     height: 146px;
+        // }
     }
 
     &__button {
@@ -1110,9 +1122,43 @@
     background: #333333;
 
     &__wrapper {
-        margin: 0 auto;
         display: grid;
-        @media only screen and (max-width: 639px) {
+        margin: 0 7.8vw;
+        padding-top: 105px;
+        column-gap: 0px;
+        grid-template: auto auto auto / auto auto auto;
+        grid-template-areas: 
+            'logo nav button'
+            'contact-us zoo-centre .'
+            'copyrights copyrights copyrights'
+        ;
+        @media only screen and (max-width: 1200px) {
+            grid-template-columns: auto auto;
+            grid-template-rows: auto 225px auto auto;
+            column-gap: 0;
+            margin: 0px 12.5vw;
+            padding-top: 100px;
+            grid-template-areas: 
+                'logo nav' 
+                'contact-us zoo-centre'
+                'contact-us button'
+                'copyrights copyrights'
+            ;
+        } 
+        @media only screen and (max-width: 640px) {
+            padding-top: 96px;
+            margin: 0 17px;
+            grid-template-columns: auto fit-content(191px) auto;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+                'logo button button' 
+                'nav nav .'
+                'contact-us contact-us .'
+                'zoo-centre zoo-centre .'
+                'copyrights copyrights copyrights'
+            ;
+        }
+        @media only screen and (max-width: 320px) {
             padding-top: 50px;
             margin: 0 10px;
             grid-template: auto / auto;
@@ -1125,126 +1171,78 @@
                 'copyrights'
             ;
         } 
-        @media only screen and (min-width: 640px) {
-            padding-top: 96px;
-            margin: 0 20px;
-            grid-template-columns: auto fit-content(191px) auto;
-            grid-template-rows: auto auto;
-            grid-template-areas: 
-                'logo button button' 
-                'nav nav .'
-                'contact-us contact-us .'
-                'zoo-centre zoo-centre .'
-                'copyrights copyrights copyrights'
-            ;
-        } 
-        @media only screen and (min-width: 1200px) {
-            grid-template-columns: auto auto;
-            grid-template-rows: auto 225px auto auto;
-            column-gap: 76px;
-            margin: 0 150px;
-            padding-top: 100px;
-            grid-template-areas: 
-                'logo nav' 
-                'contact-us zoo-centre'
-                'contact-us button'
-                'copyrights copyrights'
-            ;
-        } 
-        @media only screen and (min-width: 1900px){
-            grid-template: auto auto auto / auto auto auto;
-            grid-template-areas: 
-                'logo nav button'
-                'contact-us zoo-centre .'
-                'copyrights copyrights copyrights'
-            ;
-            column-gap: 0px;
-        }
     }
     &__logo {
         grid-area: logo;
         .logo__bg {
             background: url($path+'/assets/images/global/logo/logo-white.svg') no-repeat center;
         }
-        @media only screen and (max-width: 639px) {
-            margin-bottom: 30px;
-        } 
-        @media only screen and (min-width: 640px) {
+        margin-bottom: 57px;
+        width: 59px;
+        height: 54px;
+        @media only screen and (max-width: 1200px) {
             margin-bottom: 19px;
-        } 
-        @media only screen and (min-width: 1200px) {
-
-        } 
-        @media only screen and (min-width: 1900px){
-            margin-bottom: 57px;
-            width: 59px;
-            height: 54px;
         }
+        @media only screen and (max-width: 640px) {
+            margin-bottom: 0px;
+        }
+        @media only screen and (max-width: 320px) {
+            margin-bottom: 13px;
+        } 
     }
 
     &__contact-us {
         grid-area: contact-us;
-        @media only screen and (max-width: 639px) {
-            width: 100%;
-            margin-bottom: 54px;
-        } 
-        @media only screen and (min-width: 640px) {
-            margin-bottom: 77px;
-        } 
-        @media only screen and (min-width: 1200px) {
-            width: 383px;
+        min-width: 371px;
+        margin-bottom: 60px;
+        margin-right: 23vw;
+        @media only screen and (max-width: 1200px) {
+            min-width: 31vw;
             margin-bottom: 64px;
+            margin-right: 6.34vw;
         } 
-        @media only screen and (min-width: 1900px){
-            margin-bottom: 60px;
-            margin-right: 441px;
-        }
+        @media only screen and (max-width: 640px) {
+            margin-bottom: 90px;
+            min-width: 53vw;
+        } 
+        @media only screen and (max-width: 320px) {
+            width: 100%;
+            margin-bottom: 68px;
+        } 
     }
 
     &__nav {
         grid-area: nav;
         padding-top: 17px;
-        @media only screen and (max-width: 639px) {
-            margin-bottom: 47px;
-            .nav__list {
-                flex-direction: column;
-            }
-        } 
-        @media only screen and (min-width: 640px) {
-            margin-bottom: 55px;
-            .nav__list {
-                flex-direction: column;
-            }
-        } 
-        @media only screen and (min-width: 1200px) {
-            .nav__list {
-                width: 440px;
-                flex-direction: row;
-            }
-            .nav__item {
-                margin-right: 164px;
-                &:last-child {
-                    margin-right: 0px;
-                }
-            }
-        } 
-        @media only screen and (min-width: 1900px){
-            margin-right: 112px;
-            margin-bottom: 74px;
-            .nav__list {
-                max-width: 404px;
-                flex-direction: row;
-            }
-            .nav__item {
-                max-width: 404px;
-                margin-right: 73px;
-                &:last-child {
-                    margin-right: 0px;
-                }
-            }
+        margin-right: 5.83vw;
+        margin-bottom: 74px;
+        .nav__list {
+            max-width: 404px;
+            flex-direction: row;
         }
-    
+        @media only screen and (max-width: 1200px) {
+            .nav__list {
+                max-width: 440px;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        } 
+        @media only screen and (max-width: 640px) {
+            margin-bottom: 22px;
+            .nav__list {
+                flex-direction: column;
+            }
+        } 
+        @media only screen and (max-width: 320px) {
+            margin-bottom: 21px;
+            .nav__list {
+                flex-direction: column;
+            }
+        } 
+        
         .nav__item {
+            max-width: 404px;
+            margin-right: 3.7vw;
             &:last-child {
                 margin-right: 0px;
             }
@@ -1252,6 +1250,15 @@
                 text-decoration: underline;
                 font-weight: 900;
             }
+            @media only screen and (max-width: 1200px) {
+                margin-right: 67px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+            } 
+            @media only screen and (max-width: 640px) {
+                margin-bottom: 4.5px;
+            } 
         }
     }
 
@@ -1259,61 +1266,56 @@
         grid-area: zoo-centre;
         display: flex;
         flex-direction: column;
-        @media only screen and (max-width: 639px) {
-            margin-bottom: 46px;
-        }
-        @media only screen and (min-width: 640px) {
+        @media only screen and (max-width: 1200px) {
+            margin-bottom: 35px;
+            margin-top: -14px;
+        } 
+        @media only screen and (max-width: 640px) {
             margin-bottom: 71px;
         } 
-        @media only screen and (min-width: 1200px) {
-            margin-bottom: 40px;
-        } 
-        @media only screen and (min-width: 1900px){
-        
+        @media only screen and (max-width: 320px) {
+            margin-bottom: 46px;
         }
     }
     
     &__button {
         grid-area: button;
         width: 275px;
-        @media only screen and (max-width: 639px) {
-            margin-bottom: 80px;
-            justify-self: center
-        } 
-        @media only screen and (min-width: 640px) {
-            justify-self: end;
-        } 
-        @media only screen and (min-width: 1200px) {
+        justify-self: end;
+        @media only screen and (max-width: 1200px) {
             justify-self: start;
-        } 
-        @media only screen and (min-width: 1900px){
-            justify-self: end;
+            margin-top: -13px;
+            width: 23.5vw;
         }
+        @media only screen and (max-width: 640px) {
+            justify-self: end;
+            width: 43vw;
+            margin-top: 0;
+        } 
+        @media only screen and (max-width: 320px) {
+            margin-bottom: 80px;
+            justify-self: center;
+            width: 275px;
+        }  
     }
 
     &__copyrights {
         grid-area: copyrights;
         border-top: 0.5px solid #FEFEFE;
-        @media only screen and (max-width: 639px) {
+        .copyrights__body {
+            padding: 28px 0 66px 0;
+        }
+        @media only screen and (max-width: 640px) {
+            .copyrights__body {
+                padding: 28px 0 48px 0;
+            }
+        }
+        @media only screen and (max-width: 320px) {
             .copyrights__body {
                 padding: 28px 0;
             }
         } 
-        @media only screen and (min-width: 640px) {
-            .copyrights__body {
-                padding: 28px 0 48px 0;
-            }
-        } 
-        @media only screen and (min-width: 1200px) {
-
-        } 
-        @media only screen and (min-width: 1900px){
-            .copyrights__body {
-                padding: 28px 0 66px 0;
-            }
-        }
     }
-
 }
 
 
