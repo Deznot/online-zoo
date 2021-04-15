@@ -612,6 +612,9 @@
 .pets-in-zoo {
     &__wrapper {
         padding: 100px 0;
+        @media only screen and (max-width: 320px) {
+            padding: 100px 0 50px 0;
+        }
     }
     &__title {
         font-weight: 900;
@@ -751,12 +754,12 @@
     }
 
     &__counter {
-        @media only screen and (max-width: 320px) {
-            margin-bottom: 25px;
-        }
         @media only screen and (max-width: 640px) {
             margin-bottom: 32px;
         }
+        @media only screen and (max-width: 320px) {
+            margin-bottom: 25px;
+        } 
     }
 
     &__button {
@@ -769,10 +772,11 @@
 /* pay_and_feed start */
 .pay-and-feed {
     background: #F2F2F2;
-
     &__wrapper {
         padding: 100px 0;
-        min-width: 1200px;
+        @media only screen and (max-width: 320px) {
+            padding: 50px 0;
+        }
     }
 
     &__title {
@@ -782,6 +786,13 @@
         text-align: center;
         color: #333333;
         margin-bottom: 30px;
+        @media only screen and (max-width: 640px) {
+            margin-bottom: 20px;
+        }
+        @media only screen and (max-width: 320px) {
+            font-size: 36px;
+            line-height: 42px;
+        }
     }
     &__descr {
         font-weight: normal;
@@ -789,15 +800,41 @@
         line-height: 16px;
         text-align: center;
         margin-bottom: 92px;
+        @media only screen and (max-width: 1200px) {
+            margin-bottom: 50px;
+        }
+        @media only screen and (max-width: 640px) {
+            margin: 0 50px 50px;
+        }
+        @media only screen and (max-width: 320px) {
+            display: none;
+        }
+        
     }
     &__cards {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 60px;
+        @media only screen and (max-width: 1200px) {
+            margin-bottom: 51px;
+        }
+        @media only screen and (max-width: 640px) {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
         &-arrow {
-            margin-right: 63px;
+            margin-right: 3.3vw;
             max-width: 106px;
+            @media only screen and (max-width: 1200px) {
+                max-width: 48px;
+                margin-right: 1.4vw;
+            }
+            @media only screen and (max-width: 640px) {
+                transform: rotate(90deg);
+                margin-bottom: 30px;
+                margin-right: 0;
+            }
         }
     }
     &__card {
@@ -805,16 +842,32 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 63px;
+        margin-right: 3.3vw;
         width: 245px;
         height: 245px;
         border: 3px solid #4BD8CB;
         border-radius: 50%;
-
+        @media only screen and (max-width: 1200px) {
+            margin-right: 1.4vw;
+            width: 20.5vw;
+            height: 20.5vw;
+        }
+        @media only screen and (max-width: 640px) {
+            width: 245px;
+            height: 245px;
+            margin: 0;
+            margin-bottom: 54px;
+        }
         &-pic {
-            margin-bottom: 18.11px;
-            width: 60px;
-            height: 60px;
+            margin-bottom: 30px;
+            @media only screen and (max-width: 1200px) {
+                margin-bottom: 1.5vw;
+            } 
+            @media only screen and (max-width: 320px) {
+                margin-bottom: 3.5vw;
+                padding-top: 29px;
+            } 
+            
         }
         &-title {
             width: 136px;
@@ -823,6 +876,15 @@
             line-height: 23px;
             text-align: center;
             letter-spacing: 0.1px;
+            @media only screen and (max-width: 1200px) {
+                font-size: 1.65vw;
+                width: 11.4vw;
+                letter-spacing: 0.3px;
+            }  
+            @media only screen and (max-width: 640px) {
+                font-size: 20px;
+                width: 136px;
+            } 
         }
 
         &:last-child {

@@ -836,6 +836,12 @@
   padding: 100px 0;
 }
 
+@media only screen and (max-width: 320px) {
+  .pets-in-zoo__wrapper {
+    padding: 100px 0 50px 0;
+  }
+}
+
 .pets-in-zoo__title {
   font-weight: 900;
   font-size: 48px;
@@ -1041,15 +1047,15 @@
   margin-right: 10px;
 }
 
-@media only screen and (max-width: 320px) {
-  .pets-in-zoo__counter {
-    margin-bottom: 25px;
-  }
-}
-
 @media only screen and (max-width: 640px) {
   .pets-in-zoo__counter {
     margin-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pets-in-zoo__counter {
+    margin-bottom: 25px;
   }
 }
 
@@ -1065,7 +1071,12 @@
 
 .pay-and-feed__wrapper {
   padding: 100px 0;
-  min-width: 1200px;
+}
+
+@media only screen and (max-width: 320px) {
+  .pay-and-feed__wrapper {
+    padding: 50px 0;
+  }
 }
 
 .pay-and-feed__title {
@@ -1077,12 +1088,43 @@
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 640px) {
+  .pay-and-feed__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pay-and-feed__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
 .pay-and-feed__descr {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   margin-bottom: 92px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pay-and-feed__descr {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .pay-and-feed__descr {
+    margin: 0 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pay-and-feed__descr {
+    display: none;
+  }
 }
 
 .pay-and-feed__cards {
@@ -1098,9 +1140,41 @@
   margin-bottom: 60px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .pay-and-feed__cards {
+    margin-bottom: 51px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .pay-and-feed__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
 .pay-and-feed__cards-arrow {
-  margin-right: 63px;
+  margin-right: 3.3vw;
   max-width: 106px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pay-and-feed__cards-arrow {
+    max-width: 48px;
+    margin-right: 1.4vw;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .pay-and-feed__cards-arrow {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
 }
 
 .pay-and-feed__card {
@@ -1117,17 +1191,45 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 63px;
+  margin-right: 3.3vw;
   width: 245px;
   height: 245px;
   border: 3px solid #4BD8CB;
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 1200px) {
+  .pay-and-feed__card {
+    margin-right: 1.4vw;
+    width: 20.5vw;
+    height: 20.5vw;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .pay-and-feed__card {
+    width: 245px;
+    height: 245px;
+    margin: 0;
+    margin-bottom: 54px;
+  }
+}
+
 .pay-and-feed__card-pic {
-  margin-bottom: 18.11px;
-  width: 60px;
-  height: 60px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pay-and-feed__card-pic {
+    margin-bottom: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pay-and-feed__card-pic {
+    margin-bottom: 3.5vw;
+    padding-top: 29px;
+  }
 }
 
 .pay-and-feed__card-title {
@@ -1137,6 +1239,21 @@
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.1px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pay-and-feed__card-title {
+    font-size: 1.65vw;
+    width: 11.4vw;
+    letter-spacing: 0.3px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .pay-and-feed__card-title {
+    font-size: 20px;
+    width: 136px;
+  }
 }
 
 .pay-and-feed__card:last-child {
