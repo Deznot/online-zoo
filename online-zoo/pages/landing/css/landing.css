@@ -50,7 +50,6 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-top: 15px;
   }
 }
 
@@ -66,13 +65,7 @@
 
 @media only screen and (max-width: 640px) {
   .header__radio {
-    margin-right: 34px;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .header__radio {
-    margin-right: 24px;
+    margin-right: 35px;
   }
 }
 
@@ -98,9 +91,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 12px;
+  margin-top: 10px;
   margin-right: 7px;
-  width: 48vw;
+  width: 576px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav-header__list {
+    width: 48vw;
+  }
 }
 
 .nav-header__item {
@@ -148,6 +147,12 @@
 @media only screen and (max-width: 1200px) {
   .info-item {
     margin-right: 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .info-item {
+    margin-right: 5vw;
   }
 }
 
@@ -204,7 +209,7 @@
 .info-item__info {
   display: none;
   position: absolute;
-  left: 21px;
+  left: 24px;
   bottom: 44px;
   width: 194px;
 }
@@ -356,7 +361,7 @@
   position: absolute;
   min-width: 1087px;
   min-height: 430px;
-  left: 43.5vw;
+  left: 43.7vw;
   top: 418px;
   overflow: hidden;
   background: url("../../../assets/images/landing/intro/slider/line.svg") no-repeat left 170px;
@@ -367,7 +372,7 @@
     background-position: left 180px;
     left: initial;
     top: 432px;
-    right: -1147px;
+    right: -1130px;
   }
 }
 
@@ -399,7 +404,7 @@
 
 @media only screen and (max-width: 640px) {
   .intro__slider {
-    margin-left: 12vw;
+    margin-left: 10vw;
   }
 }
 
@@ -509,7 +514,7 @@
 
 @media only screen and (max-width: 320px) {
   .intro__count {
-    margin-bottom: -7px;
+    margin-bottom: -2px;
   }
 }
 

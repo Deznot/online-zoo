@@ -30,7 +30,6 @@
            display: flex;
            align-items: center;
            justify-content: flex-end;
-           padding-top: 15px;
         }
     }
 
@@ -41,12 +40,8 @@
             object-fit: cover;
         }
         @media only screen and (max-width: 640px) {
-            margin-right: 34px;
+            margin-right: 35px;
         }
-        @media only screen and (max-width: 640px) {
-            margin-right: 24px;
-        }
-        
     }
 
     &__burger {
@@ -62,14 +57,16 @@
 }
 
 .nav-header {
-
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 12px;
+        margin-top: 10px;
         margin-right: 7px;
-        width: 48vw;
+        width: 576px;
+        @media only screen and (max-width: 1200px) {
+            width: 48vw;
+        }
     }
 
     &__item {
@@ -113,6 +110,9 @@
     @media only screen and (max-width: 1200px) {
         margin-right: 2.5vw;
     }
+    @media only screen and (max-width: 640px) {
+        margin-right: 5vw;
+    }
     @media only screen and (max-width: 320px) {
         margin-right: 9px;
     }
@@ -146,7 +146,7 @@
     &__info {
         display: none;
         position: absolute;
-        left: 21px;
+        left: 24px;
         bottom: 44px;
         width: 194px;
         @media only screen and (max-width: 1200px) {
@@ -255,7 +255,7 @@
         position: absolute;
         min-width: 1087px;
         min-height: 430px;
-        left: 43.5vw;
+        left: 43.7vw;
         top: 418px;
         overflow: hidden;
         background: url($path+'/assets/images/landing/intro/slider/line.svg') no-repeat left 170px;
@@ -263,7 +263,7 @@
             background-position: left 180px;
             left: initial;
             top: 432px;
-            right: -1147px;
+            right: -1130px;
         } 
         @media only screen and (max-width: 640px) {
             left: 9vw;
@@ -285,7 +285,7 @@
         @media only screen and (max-width: 1200px) {
         } 
         @media only screen and (max-width: 640px) {
-            margin-left: 12vw;
+            margin-left: 10vw;
         }
         @media only screen and (max-width: 320px) {
             margin-left: 21px;
@@ -360,7 +360,7 @@
     &__count {
         margin-bottom: 5px;
         @media only screen and (max-width: 320px) {
-            margin-bottom: -7px;
+            margin-bottom: -2px;
         }
     }
 
