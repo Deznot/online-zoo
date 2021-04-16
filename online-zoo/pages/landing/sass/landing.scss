@@ -121,13 +121,9 @@
     }
     &__actions {
         display: flex;
-        // @media only screen and (max-width: 640px) {
-        //     flex-wrap: wrap;
-        // }
         @media only screen and (max-width: 320px) {
             flex-direction: column;
         } 
-
     }
     &__photo {
         width: 140px;
@@ -1095,18 +1091,18 @@
         max-width: 62.5vw;
         margin: 0 auto;
         margin-bottom: 30px;
-        // @media only screen and (max-width: 1200px) {
-        //     max-width: 900px;
-        //     height: 436px;
-        // }
-        // @media only screen and (max-width: 640px) {
-        //     max-width: 600px;
-        //     min-height: 290px;
-        // }
-        // @media only screen and (max-width: 320px) {
-        //     max-width: 300px;
-        //     height: 146px;
-        // }
+        @media only screen and (max-width: 1200px) {
+            max-width: 900px;
+            height: 436px;
+        }
+        @media only screen and (max-width: 640px) {
+            max-width: 600px;
+            min-height: 290px;
+        }
+        @media only screen and (max-width: 320px) {
+            max-width: 300px;
+            height: 146px;
+        }
     }
 
     &__button {
