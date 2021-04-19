@@ -4,44 +4,8 @@
           box-shadow: 0px 4px 8px 0px rgba(44, 101, 77, 0.08);
 }
 
-@media only screen and (max-width: 320px) {
-  .header__radio {
-    margin-right: 25px;
-  }
-}
-
 .nav-header__list {
   margin-top: 5px;
-}
-
-.logo-header {
-  width: 59px;
-  height: 63px;
-}
-
-.logo-header__link {
-  text-decoration: none;
-}
-
-.logo-header__online {
-  display: block;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.08em;
-  color: #333333;
-}
-
-.logo-header__zoo {
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 42px;
-  color: #333333;
-}
-
-.logo-header__text {
-  width: 59px;
-  height: 42px;
 }
 
 /* Header style end*/
@@ -408,12 +372,13 @@
 @media only screen and (max-width: 640px) {
   .main {
     height: 922px;
+    margin-top: calc(60px + 94px);
   }
 }
 
 @media only screen and (max-width: 320px) {
   .main {
-    margin-top: 33px;
+    margin-top: calc(33px + 94px);
     height: 651px;
   }
 }

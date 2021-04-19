@@ -225,9 +225,6 @@ img {
         position: relative;
         width: 100%;
         height: 100%;
-        @media only screen and (max-width: 1200px) {
-
-        }
     }
     &__map {
         width: 100%;
@@ -240,7 +237,13 @@ img {
     }
     &__icon {
         position: absolute;
-        width: 5.6%;
+        width: var(--icon-width);
+        --icon-width: 66px;
+        --icon-height: 84px;
+        @media only screen and (max-width: 320px) {
+            --icon-width: 33px;
+            --icon-height: 46px;
+        }
         &--active {
             .main-map__bg {
                 fill: #EB5757;
@@ -255,23 +258,36 @@ img {
 
     //animals on map start
     &__eagle {
-        left: 10.5%;
-        top: 16%;
+        // left: 10.5%;
+        // top: 16%;
+        top: calc(33% - var(--icon-height));
+        left: calc(13% - var(--icon-width) / 2);
     }
 
     &__alligator {
-        left: 20.3%;
-        top: 20%;
+        // left: 20.3%;
+        // top: 20%;
+        top: calc(38% - var(--icon-height));
+        left: calc(23% - var(--icon-width) / 2);
     }
 
     &__gorilla {
-        top: 38%;
-        left: 47.5%
+        // top: 38%;
+        // left: 47.5%
+        top: calc(55% - var(--icon-height));
+        left: calc(50.5% - var(--icon-width) / 2);
+        @media only screen and (max-width: 1200px) {
+            .tooltip__text {
+                transform: translate(-56%, 0%);
+            }
+        }
     }
 
     &__panda {
-        top: 18%;
-        left: 74.5%;
+        // top: 18%;
+        // left: 74.5%;
+        top: calc(35% - var(--icon-height));
+        left: calc(77% - var(--icon-width) / 2);
         .tooltip__text {
             top: 50%;
             left: -50%;
@@ -318,6 +334,20 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
+        @media only screen and (max-width: 1200px) {
+            top: 100%;
+            left: 100%;
+            transform: translate(-5%,-5%);
+        }
+        @media only screen and (max-width: 640px) {
+            width: 69vw;
+            height: 23vw;
+        }
+        @media only screen and (max-width: 320px) {
+            width: 238px;
+            height: 113px;
+        }
+        
     }
     &:hover {
         .tooltip__text {
@@ -329,6 +359,18 @@ img {
         margin-right: 20px;
         width: 65px;
         height: 65px;
+        margin-left: 44px;
+        @media only screen and (max-width: 640px) {
+            margin-right: 3vw;
+            width: 10vw;
+            height: 10vw;
+        }
+        @media only screen and (max-width: 320px) {
+            margin-left: 15px;
+            width: 40px;
+            height: 40px;
+            margin-right: 8px;
+        }
     }
 
     &__description {
@@ -336,6 +378,17 @@ img {
         font-size: 14px;
         line-height: 16px;
         color: #4F4F4F;
+        @media only screen and (max-width: 1200px) {
+            margin-bottom: 5px;
+        }
+        @media only screen and (max-width: 640px) {
+            font-size: 2.2vw;
+        }
+        @media only screen and (max-width: 320px) {
+            width: 150px;
+            font-size: 11px;
+            line-height: 13px;
+        }
     }
 
     &__title {
@@ -344,6 +397,17 @@ img {
         line-height: 21px;
         color: #333333;
         margin-bottom: 7px;
+        @media only screen and (max-width: 1200px) {
+            margin-bottom: 7px;
+        }
+        @media only screen and (max-width: 640px) {
+            font-size: 2.85vw;
+            margin-bottom: 1.1vw;
+        }
+        @media only screen and (max-width: 320px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
     
     &__sub-title {
@@ -352,6 +416,13 @@ img {
         line-height: 16px;
         color: #333333;
         margin-bottom: 5px;
+        @media only screen and (max-width: 640px) {
+            font-size: 2.2vw;
+        }
+        @media only screen and (max-width: 320px) {
+            font-size: 11px;
+            line-height: 13px;
+        }
     }
 }
 
@@ -469,9 +540,7 @@ img {
 
     &__legend {
         padding: 3px 5px 3px 3px;
-        @media only screen and (max-width: 640px) {
-            letter-spacing: -0.9px;
-        }
+        letter-spacing: -0.9px;
     }
 
     &__areafield-textarea {
@@ -617,6 +686,16 @@ img {
 
 /* Header style start*/
 .header {
+    box-shadow: 0px 4px 8px 0px rgba(44, 101, 77, 0.08);
+    background-color: #FFFFFF;
+    @media only screen and (max-width: 640px) {
+        max-width: 640px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
     &__wrapper {
         height: 94px;
         display: flex;
@@ -629,6 +708,7 @@ img {
         }
         @media only screen and (max-width: 640px) {
             margin: 0 20px;
+
         }
         @media only screen and (max-width: 320px) {
             margin: 0 10px;
@@ -657,7 +737,10 @@ img {
         }
         @media only screen and (max-width: 640px) {
             margin-right: 35px;
-        }
+        }  
+        @media only screen and (max-width: 320px) {
+            margin-right: 25px;
+        }  
     }
 
     &__burger {
@@ -710,6 +793,35 @@ img {
             cursor: default;
             pointer-events: none;
         }
+    }
+}
+
+.logo-header {
+    width: 59px;
+    height: 63px;
+    &__link {
+        text-decoration: none;
+    }
+
+    &__online {
+        display: block;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.08em;
+        color: #333333;
+    }
+
+    &__zoo {
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: #333333;
+    }
+
+    &__text {
+        width: 59px;
+        height: 42px;
     }
 }
 /* Header style end*/
@@ -881,7 +993,7 @@ img {
         @media only screen and (max-width: 1200px) {
             justify-self: start;
             margin-top: -13px;
-            width: 23.5vw;
+            width: 23vw;
         }
         @media only screen and (max-width: 640px) {
             justify-self: end;
