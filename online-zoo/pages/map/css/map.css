@@ -216,7 +216,7 @@
 
 @media only screen and (max-width: 640px) {
   .main__container {
-    margin-top: calc(60+ 94px);
+    margin-top: calc(60px + 94px);
     max-width: 600px;
     margin-bottom: 78px;
   }
