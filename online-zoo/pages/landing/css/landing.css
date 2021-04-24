@@ -1655,34 +1655,4 @@
 }
 
 /* map end */
-/* footer start */
-.footer {
-  background-color: var(--footer-bg-color);
-}
-
-.footer__wrapper {
-  padding-top: 100px;
-}
-
-@media only screen and (max-width: 640px) {
-  .footer__wrapper {
-    padding-top: 96px;
-    margin: 0px 20px;
-  }
-}
-
-.footer__contact-us {
-  margin-right: 22.8vw;
-}
-
-@media only screen and (max-width: 1200px) {
-  .footer__button {
-    -ms-grid-column-align: start;
-        justify-self: start;
-    margin-top: -13px;
-    width: 23.5vw;
-  }
-}
-
-/* footer end */
 /*# sourceMappingURL=landing.css.map */

@@ -905,11 +905,62 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 404px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.nav__item .active {
-  text-decoration: underline;
-  font-weight: 900;
+@media only screen and (max-width: 1200px) {
+  .nav__list {
+    max-width: 440px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.nav__item {
+  max-width: 404px;
+  margin-right: 3.7vw;
+}
+
+.nav__item:last-child {
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav__item {
+    margin-right: 73px;
+  }
+  .nav__item:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .nav__item {
+    margin-right: 0;
+    margin-bottom: 4.5px;
+  }
 }
 
 .nav__link {
@@ -974,7 +1025,7 @@ img {
   font-size: 20px;
   line-height: 23px;
   color: #FEFEFE;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .form__info {
@@ -1068,7 +1119,13 @@ img {
   font-size: 12px;
   line-height: 14px;
   color: #BDBDBD;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .form__label {
+    margin-bottom: 17px;
+  }
 }
 
 .form__label > input:not(:disabled):active + span::before {
@@ -1404,7 +1461,7 @@ img {
   display: -ms-grid;
   display: grid;
   margin: 0 7.8vw;
-  padding-top: 105px;
+  padding-top: 100px;
   -webkit-column-gap: 0px;
           column-gap: 0px;
   -ms-grid-rows: auto auto auto;
@@ -1430,7 +1487,7 @@ img {
 @media only screen and (max-width: 640px) {
   .footer__wrapper {
     padding-top: 96px;
-    margin: 0 17px;
+    margin: 0 20px;
     -ms-grid-columns: auto fit-content(191px) auto;
         grid-template-columns: auto fit-content(191px) auto;
     -ms-grid-rows: auto auto;
@@ -1455,6 +1512,7 @@ img {
   -ms-grid-column: 1;
   grid-area: logo;
   margin-bottom: 57px;
+  padding-bottom: 14px;
   width: 59px;
   height: 54px;
 }
@@ -1485,16 +1543,16 @@ img {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: contact-us;
-  min-width: 371px;
+  min-width: 360px;
   margin-bottom: 60px;
   margin-right: 23vw;
 }
 
 @media only screen and (max-width: 1200px) {
   .footer__contact-us {
-    min-width: 31vw;
+    min-width: 32vw;
     margin-bottom: 64px;
-    margin-right: 6.34vw;
+    margin-right: 6vw;
   }
 }
 
@@ -1517,51 +1575,19 @@ img {
   -ms-grid-column: 2;
   grid-area: nav;
   padding-top: 17px;
-  margin-right: 5.83vw;
+  margin-right: 5vw;
   margin-bottom: 74px;
-}
-
-.footer__nav .nav__list {
-  max-width: 404px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-@media only screen and (max-width: 1200px) {
-  .footer__nav .nav__list {
-    max-width: 440px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 @media only screen and (max-width: 640px) {
   .footer__nav {
     margin-bottom: 22px;
   }
-  .footer__nav .nav__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 @media only screen and (max-width: 320px) {
   .footer__nav {
     margin-bottom: 21px;
-  }
-  .footer__nav .nav__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
@@ -1581,7 +1607,7 @@ img {
 
 @media only screen and (max-width: 1200px) {
   .footer__nav .nav__item {
-    margin-right: 67px;
+    margin-right: 73px;
   }
   .footer__nav .nav__item:last-child {
     margin-right: 0px;

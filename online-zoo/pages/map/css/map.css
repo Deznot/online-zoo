@@ -1,9 +1,62 @@
-/* Header style start*/
-.header {
-  -webkit-box-shadow: 0px 4px 8px 0px rgba(44, 101, 77, 0.08);
-          box-shadow: 0px 4px 8px 0px rgba(44, 101, 77, 0.08);
+/* colors start */
+.light {
+  /* landing start */
+  --header-bg-color: #ffffff;
+  --main-bg-color: #FBFBFB;
+  --main-title-color: #333333;
+  --main-subtitle-color: #4F4F4F;
+  --map-slider-active-border-color: #FBFBFB;
+  --map-slider-arr-color: #828282;
+  --footer-bg-color: #333333;
+  /* landing end */
+  --tooltip-bg-color: #FEFEFE;
+  --tooltip-text-color: #4F4F4F;
+  --tooltop-title-color: #333333;
+  --tooltip-subtitle-color: #333333;
+  --nav-header-link-color: #333333;
+  --logo-header-color: #333333;
+  --logo-footer-color: #FEFEFE;
+  --counter-current: #333333;
+  --counter-total: #BDBDBD;
+  --range-thumb: #333333;
+  --range-track: rgba(189, 189, 189, 0.57);
+  --design-toggle-thumb: #FFFFFF;
+  --design-toggle-track: #F1F1F1;
+  --burger-line: #333333;
+  --earth-color: #333333;
+  --earth-color-active: #DADADA;
+  --earth-color-stroke: #333333;
 }
 
+.dark {
+  --header-bg-color: #333333;
+  --main-bg-color: #4F4F4F;
+  --main-title-color: #FEFEFE;
+  --main-subtitle-color: #F2F2F2;
+  --map-slider-active-border-color: #4F4F4F;
+  --map-slider-arr-color: #F2F2F2;
+  --footer-bg-color: #333333;
+  --tooltip-bg-color: #333333;
+  --tooltip-text-color: #F2F2F2;
+  --tooltop-title-color: #FEFEFE;
+  --tooltip-subtitle-color: #FEFEFE;
+  --nav-header-link-color: #FEFEFE;
+  --logo-header-color: #FEFEFE;
+  --logo-footer-color: #FEFEFE;
+  --counter-current: #FEFEFE;
+  --counter-total: #BDBDBD;
+  --range-thumb: #FEFEFE;
+  --range-track: rgba(189, 189, 189, 0.57);
+  --design-toggle-thumb: #1B1B1B;
+  --design-toggle-track: #4F4F4F;
+  --burger-line: #FEFEFE;
+  --earth-color: #E1E1E1;
+  --earth-color-active: #333333;
+  --earth-color-stroke: #FEFEFE;
+}
+
+/* colors end */
+/* Header style start*/
 .header .nav-header__list {
   margin-top: 0;
 }
@@ -122,7 +175,7 @@
 
 .map-slider__slide--active .map-slider__img {
   max-width: 151px;
-  border: 7px solid #FBFBFB;
+  border: 7px solid var(--map-slider-active-border-color);
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -135,7 +188,7 @@
   .map-slider__slide--active .map-slider__img {
     width: 75px;
     height: 75px;
-    border: 2px solid #FBFBFB;
+    border: 2px solid var(--map-slider-active-border-color);
   }
 }
 
@@ -177,9 +230,8 @@
           transform: scale(1.3);
 }
 
-.map-slider__arr-pic {
-  width: initial;
-  max-width: initial;
+.map-slider__arr-color {
+  fill: var(--map-slider-arr-color);
 }
 
 .map-slider__counter {
@@ -202,31 +254,35 @@
   margin-bottom: 5px;
 }
 
+.main {
+  background-color: var(--main-bg-color);
+}
+
 .main__container {
   max-width: 1200px;
-  margin: 60px auto 100px;
+  margin: 5px auto 0;
+  padding: 55px 0 100px 0;
 }
 
 @media only screen and (max-width: 1200px) {
   .main__container {
-    margin-bottom: 100px;
     max-width: 800px;
   }
 }
 
 @media only screen and (max-width: 640px) {
   .main__container {
-    margin-top: calc(60px + 94px);
+    padding-top: calc(60px + 94px);
+    padding-bottom: 80px;
     max-width: 600px;
-    margin-bottom: 78px;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .main__container {
-    margin-top: calc(35px + 94px);
+    padding-top: calc(35px + 94px);
     max-width: 300px;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -235,7 +291,7 @@
   font-size: 48px;
   line-height: 56px;
   text-align: center;
-  color: #333333;
+  color: var(--main-title-color);
   margin-bottom: 20px;
 }
 
@@ -258,7 +314,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #4F4F4F;
+  color: var(--main-subtitle-color);
   max-width: 790px;
   margin: 0 auto 54px;
 }
@@ -323,27 +379,5 @@
 
 /* main end*/
 /* footer start */
-.footer {
-  background: #333333;
-}
-
-.footer__wrapper {
-  padding-top: 101px;
-}
-
-@media only screen and (max-width: 640px) {
-  .footer__wrapper {
-    margin: 0 20px;
-    padding-top: 97px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .footer__wrapper {
-    margin: 0 10px;
-    padding-top: 49px;
-  }
-}
-
 /* footer end */
 /*# sourceMappingURL=map.css.map */
