@@ -1,6 +1,127 @@
 @import "./path.scss";
+/* colors start */
+.light {
+    /* landing start */
+    --header-bg-color: #ffffff;
+
+    --how-it-work-bg-color: #ffffff;
+    --how-it-work-title: #333333;
+    --how-it-work-text: #4F4F4F;
+
+    --inspiring-bg-color: #F2F2F2;
+    --inspiring-title: #333333;
+    --inspiring-descr: #333333;
+    
+
+    --pets-in-zoo-bg-color: #ffffff;
+    --pets-in-zoo-title: #333333;
+    --pets-in-zoo-descr: #FFFFFF;
+
+    --pay-and-feed-bg-color: #F2F2F2;
+    --pay-and-feed-title: #333333;
+    --pay-and-feed-descr: #4F4F4F;
+    --pay-and-feed-card-title: #4F4F4F;
+
+
+    --testimonials-bg-color: #ffffff;
+    --testimonials-title: #333333;
+    --testimonials-slide-bg: #FEFEFE;
+    --testimonials-slide-title: #333333;
+    --testimonials-slide-descr: #4F4F4F;
+
+
+    --map-bg-color: #F2F2F2;
+    --map-title-color: #333333;
+
+    --footer-bg-color: #333333; 
+
+    /* landing end */
+    --tooltip-bg-color: #FEFEFE;
+    --tooltip-text-color: #4F4F4F;
+    --tooltop-title-color: #333333;
+    --tooltip-subtitle-color: #333333;
+
+    --nav-header-link-color: #333333;
+    --logo-header-color: #333333;
+    --logo-footer-color: #FEFEFE;
+
+    --counter-current: #333333;
+    --counter-total: #BDBDBD;
+    --range-thumb: #333333;
+    --range-track: rgba(189, 189, 189, 0.57);
+
+    --design-toggle-thumb: #FFFFFF;
+    --design-toggle-track: #F1F1F1;
+
+    --burger-line: #333333;
+    
+    --earth-color: #333333;
+    --earth-color-active: #DADADA;
+    --earth-color-stroke: #333333;
+}
+
+.dark {
+    --header-bg-color: #333333;
+
+    --how-it-work-bg-color: #333333;
+    --how-it-work-title: #FEFEFE;
+    --how-it-work-text: #F2F2F2;
+
+    --inspiring-bg-color: #4F4F4F;
+    --inspiring-title: #FEFEFE;
+    --inspiring-descr: #F2F2F2;
+
+    --pets-in-zoo-bg-color: #333333;
+    --pets-in-zoo-title: #FEFEFE;
+    --pets-in-zoo-descr: #FFFFFF;
+
+    --pay-and-feed-bg-color: #4F4F4F;
+    --pay-and-feed-title: #FEFEFE;
+    --pay-and-feed-descr: #F2F2F2;
+    --pay-and-feed-card-title: #FEFEFE;
+
+
+    --testimonials-bg-color: #333333;
+    --testimonials-title: #FEFEFE;
+    --testimonials-slide-bg: #3C3C3C;
+    --testimonials-slide-title: #FEFEFE;
+    --testimonials-slide-descr: #F2F2F2;
+
+
+    --map-bg-color: #4F4F4F;
+    --map-title-color: #FEFEFE;
+
+    --footer-bg-color: #333333;
+
+    --tooltip-bg-color: #333333;
+    --tooltip-text-color: #F2F2F2;
+    --tooltop-title-color: #FEFEFE;
+    --tooltip-subtitle-color: #FEFEFE;
+
+    --nav-header-link-color: #FEFEFE;
+    --logo-header-color: #FEFEFE;
+    --logo-footer-color: #FEFEFE;
+
+    --counter-current: #FEFEFE;
+    --counter-total: #BDBDBD;
+    --range-thumb: #FEFEFE;
+    --range-track: rgba(189, 189, 189, 0.57);
+
+    --design-toggle-thumb: #1B1B1B;
+    --design-toggle-track: #4F4F4F;
+
+    --burger-line: #FEFEFE;
+
+    --earth-color: #E1E1E1;
+    --earth-color-active: #333333;
+    --earth-color-stroke: #FEFEFE;
+}
+
+/* colors end */
+
 /* Header style start*/
 .header {
+    background-color: var(--header-bg-color);
     &__radio {
         width: 54px;
         height: 30px;
@@ -342,27 +463,31 @@
 /* how_it_works start*/
 
 .how-it-works {
+    background-color: var(--how-it-work-bg-color);
     &__content {
         max-width: 790px;
-        margin: 100px auto;
+        margin: 0 auto;
+        padding: 100px 0;
         @media only screen and (max-width: 1200px) {
             max-width: 746px;
-            margin: 100px 19vw;
+            margin: 0 19vw;
         } 
         @media only screen and (max-width: 640px) {
             max-width: 600px;
-            margin: 100px 20px 68px 20px;
+            margin: 0 20px;
+            padding: 100px 0 68px 0;
         } 
         @media only screen and (max-width: 320px) {
-            margin: 50px 10px;
             max-width: 300px;
+            padding: 50px 0;
+            margin: 0 10px;
         }
     }
     &__title {
         font-weight: 900;
         font-size: 48px;
         line-height: 56px;
-        color: #333333;
+        color: var(--how-it-work-title);
         margin-bottom: 30px;
         @media only screen and (max-width: 320px) {
             font-size: 36px;
@@ -375,7 +500,7 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 16px;
-        color: #4F4F4F;
+        color: var(--how-it-work-text);
         margin-bottom: 30px;
         @media only screen and (max-width: 1200px) {
             margin-bottom: 14px;
@@ -393,7 +518,6 @@
             overflow: hidden;
             width: 100%;
             margin: 0 auto;
-            // margin-bottom: 30px;
             margin-bottom: 25px;
             @media only screen and (max-width: 640px) {
                 max-width: 600px;
@@ -472,7 +596,7 @@
 /* inspiring start */
 
 .inspiring {
-    background: #F2F2F2;
+    background-color: var(--inspiring-bg-color);
     &__cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -511,10 +635,11 @@
             font-size: 20px;
             line-height: 23px;
             text-align: center;
-            color: #333333;
+            color: var(--inspiring-title);
             margin-bottom: 15px;
         }
         &-descr {
+            color: var(--inspiring-descr);
             font-size: 14px;
             line-height: 16px;
         }
@@ -525,6 +650,7 @@
 
 /* pets_in_Zoo start*/
 .pets-in-zoo {
+    background-color: var(--pets-in-zoo-bg-color);
     &__wrapper {
         padding: 100px 0;
         @media only screen and (max-width: 320px) {
@@ -536,7 +662,7 @@
         font-size: 48px;
         line-height: 56px;
         text-align: center;
-        color: #333333;
+        color: var(--pets-in-zoo-title);
         margin-bottom: 35px;
         @media only screen and (max-width: 320px) {
             font-size: 36px;
@@ -659,7 +785,7 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 16px;
-        color: #FFFFFF;
+        color: var(--pets-in-zoo-descr);
         margin-bottom: 14px;
     }
     &__actions {
@@ -687,20 +813,19 @@
 
 /* pay_and_feed start */
 .pay-and-feed {
-    background: #F2F2F2;
+    background-color: var(--pay-and-feed-bg-color);
     &__wrapper {
         padding: 100px 0;
         @media only screen and (max-width: 320px) {
             padding: 50px 0;
         }
     }
-
     &__title {
         font-weight: 900;
         font-size: 48px;
         line-height: 56px;
         text-align: center;
-        color: #333333;
+        color: var(--pay-and-feed-title);
         margin-bottom: 30px;
         @media only screen and (max-width: 640px) {
             margin-bottom: 16px;
@@ -717,6 +842,7 @@
         line-height: 16px;
         text-align: center;
         margin-bottom: 92px;
+        color: var(--pay-and-feed-descr);
         @media only screen and (max-width: 1200px) {
             margin-bottom: 50px;
         }
@@ -725,8 +851,7 @@
         }
         @media only screen and (max-width: 320px) {
             display: none;
-        }
-        
+        } 
     }
     &__cards {
         display: flex;
@@ -817,6 +942,7 @@
             line-height: 23px;
             text-align: center;
             letter-spacing: 0.1px;
+            color: var(--pay-and-feed-card-title);
             @media only screen and (max-width: 1200px) {
                 font-size: 1.65vw;
                 width: 11.4vw;
@@ -842,6 +968,7 @@
 /* Testimonials start */
 
 .testimonials {
+    background-color: var(--testimonials-bg-color);
     padding: 100px 0;
     @media only screen and (max-width: 640px) {
         padding: 100px 0;  
@@ -854,7 +981,7 @@
         font-size: 48px;
         line-height: 56px;
         text-align: center;
-        color: #333333;
+        color: var(--testimonials-title);
         margin-bottom: 50px;
         @media only screen and (max-width: 640px) {
             margin-bottom: 32px; 
@@ -932,7 +1059,7 @@
     &__slide {
         width: 30.5vw;
         height: 310px;
-        background: #FEFEFE;
+        background: var(--testimonials-slide-bg);
         box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
         border-radius: 5px;
         margin-right: 1.55vw;
@@ -974,7 +1101,7 @@
             font-size: 20px;
             line-height: 23px;
             text-align: center;
-            color: #333333;
+            color: var(--testimonials-slide-title);
             margin-bottom: 17px;
             @media only screen and (max-width: 320px) {
                 font-size: 16px;
@@ -986,7 +1113,7 @@
             font-weight: normal;
             font-size: 14px;
             line-height: 16px;
-            color: #4F4F4F;
+            color: var(--testimonials-slide-descr);
             margin: 0 auto;
             @media only screen and (max-width: 1200px) {
                 width: 27.2vw; 
@@ -1022,7 +1149,7 @@
 
 /* map start */
 .map {
-    background: #F2F2F2;
+    background-color: var(--map-bg-color);
     &__wrapper {
         padding: 100px 0;
         @media only screen and (max-width: 640px) {
@@ -1038,7 +1165,7 @@
         font-size: 48px;
         line-height: 56px;
         text-align: center;
-        color: #333333;
+        color: var(--map-title-color);
         margin-bottom: 60px;
         @media only screen and (max-width: 640px) {
             margin-bottom: 53px;
@@ -1080,202 +1207,25 @@
 /* footer start */
 
 .footer {
-    background: #333333;
-
+    background-color: var(--footer-bg-color);
     &__wrapper {
-        display: grid;
-        margin: 0 7.8vw;
         padding-top: 100px;
-        column-gap: 0px;
-        grid-template: auto auto auto / auto auto auto;
-        grid-template-areas: 
-            'logo nav button'
-            'contact-us zoo-centre .'
-            'copyrights copyrights copyrights'
-        ;
-        @media only screen and (max-width: 1200px) {
-            grid-template-columns: auto auto;
-            grid-template-rows: auto 225px auto auto;
-            column-gap: 0;
-            margin: 0px 12.5vw;
-            padding-top: 100px;
-            grid-template-areas: 
-                'logo nav' 
-                'contact-us zoo-centre'
-                'contact-us button'
-                'copyrights copyrights'
-            ;
-        } 
         @media only screen and (max-width: 640px) {
             padding-top: 96px;
             margin: 0px 20px;
-            grid-template-columns: auto fit-content(191px) auto;
-            grid-template-rows: auto auto;
-            grid-template-areas: 
-                'logo button button' 
-                'nav nav .'
-                'contact-us contact-us .'
-                'zoo-centre zoo-centre .'
-                'copyrights copyrights copyrights'
-            ;
         }
-        @media only screen and (max-width: 320px) {
-            padding-top: 50px;
-            margin: 0 10px;
-            grid-template: auto / auto;
-            grid-template-areas: 
-                'logo'
-                'nav'
-                'contact-us'
-                'zoo-centre'
-                'button'
-                'copyrights'
-            ;
-        } 
-    }
-    &__logo {
-        grid-area: logo;
-        .logo__bg {
-            background: url($path+'/assets/images/global/logo/logo-white.svg') no-repeat center;
-        }
-        margin-bottom: 57px;
-        width: 59px;
-        height: 54px;
-        @media only screen and (max-width: 1200px) {
-            margin-bottom: 19px;
-        }
-        @media only screen and (max-width: 640px) {
-            margin-bottom: 0px;
-        }
-        @media only screen and (max-width: 320px) {
-            margin-bottom: 13px;
-        } 
     }
 
     &__contact-us {
-        grid-area: contact-us;
-        min-width: 371px;
-        margin-bottom: 60px;
         margin-right: 22.8vw;
-        @media only screen and (max-width: 1200px) {
-            min-width: 31vw;
-            margin-bottom: 64px;
-            margin-right: 6.34vw;
-        } 
-        @media only screen and (max-width: 640px) {
-            margin-bottom: 90px;
-            min-width: 53vw;
-        } 
-        @media only screen and (max-width: 320px) {
-            width: 100%;
-            margin-bottom: 68px;
-        } 
-    }
-
-    &__nav {
-        grid-area: nav;
-        padding-top: 17px;
-        margin-right: 5.83vw;
-        margin-bottom: 74px;
-        .nav__list {
-            max-width: 404px;
-            flex-direction: row;
-        }
-        @media only screen and (max-width: 1200px) {
-            .nav__list {
-                max-width: 440px;
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-        } 
-        @media only screen and (max-width: 640px) {
-            margin-bottom: 22px;
-            .nav__list {
-                flex-direction: column;
-            }
-        } 
-        @media only screen and (max-width: 320px) {
-            margin-bottom: 21px;
-            .nav__list {
-                flex-direction: column;
-            }
-        } 
-        
-        .nav__item {
-            max-width: 404px;
-            margin-right: 3.7vw;
-            &:last-child {
-                margin-right: 0px;
-            }
-            .active {
-                text-decoration: underline;
-                font-weight: 900;
-            }
-            @media only screen and (max-width: 1200px) {
-                margin-right: 67px;
-                &:last-child {
-                    margin-right: 0px;
-                }
-            } 
-            @media only screen and (max-width: 640px) {
-                margin-bottom: 4.5px;
-            } 
-        }
-    }
-
-    &__zoo-centre {
-        grid-area: zoo-centre;
-        display: flex;
-        flex-direction: column;
-        @media only screen and (max-width: 1200px) {
-            margin-bottom: 35px;
-            margin-top: -14px;
-        } 
-        @media only screen and (max-width: 640px) {
-            margin-bottom: 71px;
-        } 
-        @media only screen and (max-width: 320px) {
-            margin-bottom: 46px;
-        }
     }
     
     &__button {
-        grid-area: button;
-        width: 275px;
-        justify-self: end;
         @media only screen and (max-width: 1200px) {
             justify-self: start;
             margin-top: -13px;
             width: 23.5vw;
         }
-        @media only screen and (max-width: 640px) {
-            justify-self: end;
-            width: 43vw;
-            margin-top: 0;
-        } 
-        @media only screen and (max-width: 320px) {
-            margin-bottom: 80px;
-            justify-self: center;
-            width: 275px;
-        }  
-    }
-
-    &__copyrights {
-        grid-area: copyrights;
-        border-top: 0.5px solid #FEFEFE;
-        .copyrights__body {
-            padding: 28px 0 66px 0;
-        }
-        @media only screen and (max-width: 640px) {
-            .copyrights__body {
-                padding: 28px 0 48px 0;
-            }
-        }
-        @media only screen and (max-width: 320px) {
-            .copyrights__body {
-                padding: 28px 0;
-            }
-        } 
     }
 }
 

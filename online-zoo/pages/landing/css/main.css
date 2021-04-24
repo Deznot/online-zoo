@@ -473,7 +473,7 @@ img {
 /*header start*/
 .design-toggle__range {
   -webkit-appearance: none;
-  background: #F1F1F1;
+  background: var(--design-toggle-track);
   border-radius: 190px;
   width: 54px;
   height: 30px;
@@ -485,7 +485,7 @@ img {
 }
 
 .design-toggle__range::-webkit-slider-thumb {
-  background: #FFFFFF;
+  background: var(--design-toggle-thumb);
   width: 20px;
   height: 20px;
   -webkit-box-shadow: 2px 4px 5px rgba(6, 12, 70, 0.15);
@@ -496,7 +496,7 @@ img {
 }
 
 .design-toggle__range::-moz-range-thumb {
-  background: #FFFFFF;
+  background: var(--design-toggle-thumb);
   width: 20px;
   height: 20px;
   box-shadow: 2px 4px 5px rgba(6, 12, 70, 0.15);
@@ -576,19 +576,19 @@ img {
   font-weight: 900;
   font-size: 24px;
   line-height: 28px;
-  color: #333333;
+  color: var(--counter-current);
 }
 
 .counter__total {
   font-weight: 900;
   font-size: 14px;
   line-height: 16px;
-  color: #BDBDBD;
+  color: var(--counter-total);
 }
 
 .counter__range {
   -webkit-appearance: none;
-  background: rgba(189, 189, 189, 0.57);
+  background: var(--range-track);
   width: 245px;
   height: 5px;
 }
@@ -598,7 +598,7 @@ img {
 }
 
 .counter__range::-webkit-slider-thumb {
-  background: #333333;
+  background: var(--range-thumb);
   width: 30px;
   height: 10px;
   cursor: pointer;
@@ -606,7 +606,7 @@ img {
 }
 
 .counter__range::-moz-range-thumb {
-  background: #333333;
+  background: var(--range-thumb);
   width: 30px;
   height: 10px;
   cursor: pointer;
@@ -659,6 +659,15 @@ img {
 .main-map__picture {
   width: 100%;
   height: 100%;
+}
+
+.main-map__earth-color {
+  fill: var(--earth-color);
+}
+
+.main-map__earth-color--active {
+  fill: var(--earth-color-active);
+  stroke: var(--earth-color-stroke);
 }
 
 .main-map__icon {
@@ -740,11 +749,11 @@ img {
   visibility: hidden;
   width: 436px;
   height: 149px;
-  background: #FEFEFE;
+  background: var(--tooltip-bg-color);
   -webkit-box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
           box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
   border-radius: 8px;
-  color: #4F4F4F;
+  color: var(--tooltip-text-color);
   text-align: center;
   position: absolute;
   top: 50%;
@@ -818,7 +827,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #4F4F4F;
+  color: var(--tooltip-text-color);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -845,7 +854,7 @@ img {
   font-weight: 900;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
+  color: var(--tooltop-title-color);
   margin-bottom: 7px;
 }
 
@@ -873,7 +882,7 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #333333;
+  color: var(--tooltip-subtitle-color);
   margin-bottom: 5px;
 }
 
@@ -929,7 +938,10 @@ img {
 .logo__bg {
   width: 100%;
   height: 100%;
-  background: url("../../../assets/images/global/logo/logo-dark.svg") no-repeat center;
+}
+
+.logo__text-color {
+  fill: var(--logo-header-color);
 }
 
 .burger__line {
@@ -937,7 +949,7 @@ img {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #333333;
+  background-color: var(--burger-line);
   right: 0;
 }
 
@@ -1195,7 +1207,7 @@ img {
 .header {
   -webkit-box-shadow: 0px 4px 8px 0px rgba(44, 101, 77, 0.08);
           box-shadow: 0px 4px 8px 0px rgba(44, 101, 77, 0.08);
-  background-color: #FFFFFF;
+  background-color: var(--header-bg-color);
 }
 
 @media only screen and (max-width: 640px) {
@@ -1336,7 +1348,7 @@ img {
   text-decoration: none;
   font-size: 16px;
   line-height: 19px;
-  color: #333333;
+  color: var(--nav-header-link-color);
 }
 
 .nav-header__link:hover:not(.nav-header__link--active), .nav-header__link:focus:not(.nav-header__link--active), .nav-header__link:active:not(.nav-header__link--active) {
@@ -1354,6 +1366,7 @@ img {
 .logo-header {
   width: 59px;
   height: 63px;
+  color: var(--logo-header-color);
 }
 
 .logo-header__link {
@@ -1384,7 +1397,7 @@ img {
 /* Header style end*/
 /* footer start */
 .footer {
-  background: #333333;
+  background: var(--footer-bg-color);
 }
 
 .footer__wrapper {
@@ -1446,8 +1459,8 @@ img {
   height: 54px;
 }
 
-.footer__logo .logo__bg {
-  background: url("../../../assets/images/global/logo/logo-white.svg") no-repeat center;
+.footer__logo-text {
+  fill: var(--logo-footer-color);
 }
 
 @media only screen and (max-width: 1200px) {
