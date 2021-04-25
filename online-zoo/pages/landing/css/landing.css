@@ -10,6 +10,8 @@
   --pets-in-zoo-bg-color: #ffffff;
   --pets-in-zoo-title: #333333;
   --pets-in-zoo-descr: #FFFFFF;
+  --pets-in-zoo-left-arrow-color: #333333;
+  --pets-in-zoo-right-arrow-color: #333333;
   --pay-and-feed-bg-color: #F2F2F2;
   --pay-and-feed-title: #333333;
   --pay-and-feed-descr: #4F4F4F;
@@ -19,6 +21,8 @@
   --testimonials-slide-bg: #FEFEFE;
   --testimonials-slide-title: #333333;
   --testimonials-slide-descr: #4F4F4F;
+  --testimonials-slider-left-arrow-color: #333333;
+  --testimonials-slider-right-arrow-color: #333333;
   --map-bg-color: #F2F2F2;
   --map-title-color: #333333;
   /* landing end */
@@ -43,6 +47,8 @@
   --testimonials-slide-bg: #3C3C3C;
   --testimonials-slide-title: #FEFEFE;
   --testimonials-slide-descr: #F2F2F2;
+  --testimonials-slider-left-arrow-color: #828282;
+  --testimonials-slider-right-arrow-color: #FEFEFE;
   --map-bg-color: #4F4F4F;
   --map-title-color: #FEFEFE;
 }
@@ -872,6 +878,8 @@
 
 .pets-in-zoo__slider-left-arrow {
   margin-right: 20px;
+  width: 30px;
+  right: 30px;
 }
 
 @media only screen and (max-width: 640px) {
@@ -886,7 +894,13 @@
           transform: scale(1.3);
 }
 
+.pets-in-zoo__slider-left-arrow-color {
+  fill: var(--pets-in-zoo-left-arrow-color);
+}
+
 .pets-in-zoo__slider-right-arrow {
+  width: 30px;
+  right: 30px;
   margin-left: 20px;
 }
 
@@ -900,6 +914,10 @@
   cursor: pointer;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+.pets-in-zoo__slider-left-arrow-color {
+  fill: var(--pets-in-zoo-right-arrow-color);
 }
 
 .pets-in-zoo__slider-counter {
@@ -1371,6 +1389,8 @@
 }
 
 .testimonials__slider-right-arrow {
+  width: 30px;
+  height: 30px;
   margin-left: 3px;
 }
 
@@ -1386,7 +1406,13 @@
   }
 }
 
+.testimonials__slider-right-arrow-color {
+  fill: var(--testimonials-slider-right-arrow-color);
+}
+
 .testimonials__slider-left-arrow {
+  width: 30px;
+  height: 30px;
   margin-right: 7px;
 }
 
@@ -1400,6 +1426,10 @@
   .testimonials__slider-left-arrow {
     display: none;
   }
+}
+
+.testimonials__slider-left-arrow-color {
+  fill: var(--testimonials-slider-left-arrow-color);
 }
 
 .testimonials__slider-counter {
