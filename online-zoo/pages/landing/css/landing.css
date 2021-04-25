@@ -1,7 +1,6 @@
 /* colors start */
 .light {
   /* landing start */
-  --header-bg-color: #ffffff;
   --how-it-work-bg-color: #ffffff;
   --how-it-work-title: #333333;
   --how-it-work-text: #4F4F4F;
@@ -22,29 +21,10 @@
   --testimonials-slide-descr: #4F4F4F;
   --map-bg-color: #F2F2F2;
   --map-title-color: #333333;
-  --footer-bg-color: #333333;
   /* landing end */
-  --tooltip-bg-color: #FEFEFE;
-  --tooltip-text-color: #4F4F4F;
-  --tooltop-title-color: #333333;
-  --tooltip-subtitle-color: #333333;
-  --nav-header-link-color: #333333;
-  --logo-header-color: #333333;
-  --logo-footer-color: #FEFEFE;
-  --counter-current: #333333;
-  --counter-total: #BDBDBD;
-  --range-thumb: #333333;
-  --range-track: rgba(189, 189, 189, 0.57);
-  --design-toggle-thumb: #FFFFFF;
-  --design-toggle-track: #F1F1F1;
-  --burger-line: #333333;
-  --earth-color: #333333;
-  --earth-color-active: #DADADA;
-  --earth-color-stroke: #333333;
 }
 
 .dark {
-  --header-bg-color: #333333;
   --how-it-work-bg-color: #333333;
   --how-it-work-title: #FEFEFE;
   --how-it-work-text: #F2F2F2;
@@ -65,24 +45,6 @@
   --testimonials-slide-descr: #F2F2F2;
   --map-bg-color: #4F4F4F;
   --map-title-color: #FEFEFE;
-  --footer-bg-color: #333333;
-  --tooltip-bg-color: #333333;
-  --tooltip-text-color: #F2F2F2;
-  --tooltop-title-color: #FEFEFE;
-  --tooltip-subtitle-color: #FEFEFE;
-  --nav-header-link-color: #FEFEFE;
-  --logo-header-color: #FEFEFE;
-  --logo-footer-color: #FEFEFE;
-  --counter-current: #FEFEFE;
-  --counter-total: #BDBDBD;
-  --range-thumb: #FEFEFE;
-  --range-track: rgba(189, 189, 189, 0.57);
-  --design-toggle-thumb: #1B1B1B;
-  --design-toggle-track: #4F4F4F;
-  --burger-line: #FEFEFE;
-  --earth-color: #E1E1E1;
-  --earth-color-active: #333333;
-  --earth-color-stroke: #FEFEFE;
 }
 
 /* colors end */

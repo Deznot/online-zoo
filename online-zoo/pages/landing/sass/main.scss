@@ -30,7 +30,66 @@
     src: local(''),
          url($path+'/assets/fonts/roboto-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url($path+'/assets/fonts/roboto-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+}
+
+/* light/dark start */
+.light {
+    --header-bg-color: #ffffff;
+    --footer-bg-color: #333333; 
+    
+    --tooltip-bg-color: #FEFEFE;
+    --tooltip-text-color: #4F4F4F;
+    --tooltop-title-color: #333333;
+    --tooltip-subtitle-color: #333333;
+
+    --nav-header-link-color: #333333;
+    --logo-header-color: #333333;
+    --logo-footer-color: #FEFEFE;
+
+    --counter-current: #333333;
+    --counter-total: #BDBDBD;
+    --range-thumb: #333333;
+    --range-track: rgba(189, 189, 189, 0.57);
+
+    --design-toggle-thumb: #FFFFFF;
+    --design-toggle-track: #F1F1F1;
+
+    --burger-line: #333333;
+    
+    --earth-color: #333333;
+    --earth-color-active: #DADADA;
+    --earth-color-stroke: #333333;
+}
+
+.dark {
+    --header-bg-color: #333333;
+    --footer-bg-color: #333333;
+
+    --tooltip-bg-color: #333333;
+    --tooltip-text-color: #F2F2F2;
+    --tooltop-title-color: #FEFEFE;
+    --tooltip-subtitle-color: #FEFEFE;
+
+    --nav-header-link-color: #FEFEFE;
+    --logo-header-color: #FEFEFE;
+    --logo-footer-color: #FEFEFE;
+
+    --counter-current: #FEFEFE;
+    --counter-total: #BDBDBD;
+    --range-thumb: #FEFEFE;
+    --range-track: rgba(189, 189, 189, 0.57);
+
+    --design-toggle-thumb: #1B1B1B;
+    --design-toggle-track: #4F4F4F;
+
+    --burger-line: #FEFEFE;
+
+    --earth-color: #E1E1E1;
+    --earth-color-active: #333333;
+    --earth-color-stroke: #FEFEFE;
+}
+
+/* light/dark end */
 
 html {
     box-sizing: border-box;
