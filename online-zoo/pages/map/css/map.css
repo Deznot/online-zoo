@@ -5,14 +5,12 @@
   --main-bg-color: #FBFBFB;
   --main-title-color: #333333;
   --main-subtitle-color: #4F4F4F;
+  --main-container-margin: 5px auto 0;
+  --main-container-padding: 55px 0 100px 0;
   --map-slider-active-border-color: #FBFBFB;
   --map-slider-arr-color: #828282;
   --footer-bg-color: #333333;
   /* landing end */
-  --tooltip-bg-color: #FEFEFE;
-  --tooltip-text-color: #4F4F4F;
-  --tooltop-title-color: #333333;
-  --tooltip-subtitle-color: #333333;
   --nav-header-link-color: #333333;
   --logo-header-color: #333333;
   --logo-footer-color: #FEFEFE;
@@ -33,13 +31,11 @@
   --main-bg-color: #4F4F4F;
   --main-title-color: #FEFEFE;
   --main-subtitle-color: #F2F2F2;
+  --main-container-margin: 0 auto;
+  --main-container-padding: 60px 0 100px 0;
   --map-slider-active-border-color: #4F4F4F;
   --map-slider-arr-color: #F2F2F2;
   --footer-bg-color: #333333;
-  --tooltip-bg-color: #333333;
-  --tooltip-text-color: #F2F2F2;
-  --tooltop-title-color: #FEFEFE;
-  --tooltip-subtitle-color: #FEFEFE;
   --nav-header-link-color: #FEFEFE;
   --logo-header-color: #FEFEFE;
   --logo-footer-color: #FEFEFE;
@@ -260,8 +256,8 @@
 
 .main__container {
   max-width: 1200px;
-  margin: 5px auto 0;
-  padding: 55px 0 100px 0;
+  margin: var(--main-container-margin);
+  padding: var(--main-container-padding);
 }
 
 @media only screen and (max-width: 1200px) {
