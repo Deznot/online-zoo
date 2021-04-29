@@ -1,4 +1,4 @@
-@import "../../landing/sass/path.scss";
+@import "../../common/scss/path.scss";
 
 .light {
     --main-bg-color: #FBFBFB;
@@ -205,7 +205,7 @@
         &--active {
             width: 157px;
             height: 157px;
-            background: url($path+'/assets/images/desktopLight/zoos_page/side-menu/active-background.svg') no-repeat center;
+            background: url($path+'/assets/images/live-broadcast/side-menu/active-background.svg') no-repeat center;
             @media only screen and (max-width: 1200px) {
                 width: 120px;
                 height: 120px;
