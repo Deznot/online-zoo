@@ -6,6 +6,8 @@
     --how-it-work-title: #333333;
     --how-it-work-text: #4F4F4F;
 
+    --intro-bg-color: #ffffff;
+
     --inspiring-bg-color: #F2F2F2;
     --inspiring-title: #333333;
     --inspiring-descr: #333333;
@@ -39,6 +41,8 @@
     --how-it-work-bg-color: #333333;
     --how-it-work-title: #FEFEFE;
     --how-it-work-text: #F2F2F2;
+
+    --intro-bg-color: #ffffff;
 
     --inspiring-bg-color: #4F4F4F;
     --inspiring-title: #FEFEFE;
@@ -88,20 +92,20 @@
 
 .info-item {
     position: relative;
-    margin-right: 46px;
+    margin: 0 23px;
     transition: width 2s linear;
     @media only screen and (max-width: 1200px) {
-        margin-right: 2.5vw;
+        margin: 0 1.25vw;
     }
     @media only screen and (max-width: 640px) {
-        margin-right: 5vw;
+        margin: 0 2.5vw;
     }
     @media only screen and (max-width: 320px) {
-        margin-right: 9px;
+        margin: 0 4.5px;
     }
-    &:last-child {
-        margin-right: 0px;
-    }
+    // &:last-child {
+    //     margin-right: 0px;
+    // }
     &__actions {
         display: flex;
         @media only screen and (max-width: 320px) {
@@ -115,8 +119,8 @@
             width: 180px;
         } 
         @media only screen and (max-width: 640px) {
-            width: 28vw;
-            min-width: 113px;
+            width: 180px;
+            // min-width: 113px;
         }  
         @media only screen and (max-width: 320px) {
             width: 113px;
@@ -243,36 +247,95 @@
             background-position: left 180px;
             left: initial;
             top: 432px;
-            right: -1130px;
+            right: -378px;
         } 
         @media only screen and (max-width: 640px) {
-            left: 9vw;
+            left: 20vw;
             top: 408px;
-            background-position: left 28.6vw;
+            background-position: left 180px;
         }
         @media only screen and (max-width: 320px) {
             left: 3px;
-            top: 362px;
-            background-position: left 100px;
+            top: 272px;
+            // background-position: left 100px;
+        }  
+    }
+
+    &__slider-bg {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        height: 13px;
+        background-color: transparent;
+        left: 0;
+        top: 39.6%;
+        @media only screen and (max-width: 1200px) {
+            top: 42%;
+        } 
+        @media only screen and (max-width: 640px) {
         }
-        
+        @media only screen and (max-width: 320px) {
+        }  
+    }
+
+    &__slider-dot {
+        padding: 0px 8.4%;
+        height: 13px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            border: 1px solid var(--intro-bg-color);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 4px;
+            top: 50%;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: var(--intro-bg-color);
+            transform: translateY(-50%);
+        }
     }
 
     &__slider {
         display: flex;
         align-items: center;
-        margin-left: 135px;
+        overflow: hidden;
+        width: 100%;
+        height: 355px;
+        position: relative;
+        left: 130px;
         @media only screen and (max-width: 1200px) {
         } 
         @media only screen and (max-width: 640px) {
-            margin-left: 10vw;
+            left: -16px;
         }
         @media only screen and (max-width: 320px) {
-            margin-left: 21px;
+            left: -5px;
         }
     }
 
-    
+    &__slider-inner {
+        position: absolute;
+        left: 167px;
+        display: flex;
+        align-items: center;
+        @media only screen and (max-width: 1200px) {
+            left: 210px;
+        } 
+        @media only screen and (max-width: 640px) {
+            left: 0px;
+        }
+    }
 
     &__item {
         transition: all .2s linear;
@@ -280,7 +343,7 @@
             .info-item__photo {
                 width: 245px;
                 @media only screen and (max-width: 640px) {
-                    width: 38.4vw;
+                    width: 245px;
                 }   
                 @media only screen and (max-width: 320px) {
                     width: 140px;
@@ -288,9 +351,6 @@
             }
             .info-item__info {
                 display: block;
-                @media only screen and (max-width: 640px) {
-                    width: 30.3vw;
-                }  
             }
         }
         &:hover:not(.intro__item--active) {
@@ -298,14 +358,11 @@
             .info-item__info {
                 display: block;
                 @media only screen and (max-width: 640px) {
-                    width: 30.3vw;
+                    width: 245px;
                 }  
             }
             .info-item__photo {
                 width: 245px;
-                @media only screen and (max-width: 640px) {
-                    width: 38.4vw;
-                }  
                 @media only screen and (max-width: 320px) {
                     width: 140px;
                 }
@@ -325,15 +382,14 @@
             left: 347px;
         } 
         @media only screen and (max-width: 640px) {
-            top: 59vw;
-            left: 44vw;
-            width: 39vw;
+            top: 377px;
+            left: 10px;
             overflow: hidden;
         }
         @media only screen and (max-width: 320px) {
             width: 140px;
-            top: 67vw;
-            left: 44vw;
+            top: 84vw;
+            left: 47vw;
         }
     }
 

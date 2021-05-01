@@ -1,4 +1,4 @@
-export default class themeSwap {
+export default class ThemeSwap {
     constructor(designToggle){
         this.designToggle = document.querySelector(designToggle);
     }
