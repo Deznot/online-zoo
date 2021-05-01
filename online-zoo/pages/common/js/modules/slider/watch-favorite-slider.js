@@ -17,7 +17,6 @@ export default class WatchFavoriteSlider extends Slider{
     }
 
     calcFieldHeight(){
-        // this.slidesField.style.width = 100 * this.slides.length + '%';
         this.slidesField.style.height = window.getComputedStyle(this.slidesField).height;
     }
 
