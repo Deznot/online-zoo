@@ -702,6 +702,7 @@
         }
         &-inner {
             display: inline-flex;
+            transition: all .5s linear;
         }
         &-left-arrow {
             margin-right: 20px;
@@ -744,9 +745,9 @@
         @media only screen and (max-width: 1200px) {
             margin-right: 20px;
         }
-        &:last-child {
-            margin-right: 0px;
-        }
+        // &:last-child {
+        //     margin-right: 0px;
+        // }
         &--active {
             .pets-in-zoo__info {
                 opacity: 1;
