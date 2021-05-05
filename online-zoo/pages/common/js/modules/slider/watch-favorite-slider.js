@@ -25,7 +25,7 @@ export default class WatchFavoriteSlider extends Slider{
     }
 
     initSlidesPosition() {
-        this.slidesField.style.transform = `translateX(${(-100 / this.slides.length) * this.slideIndex}%)`;
+        this.slidesField.style.transform = `translateX(${(-100 / (this.slides.length + this.ratio)) * this.slideIndex}%)`;
     }
 
     initDots() {
@@ -103,6 +103,7 @@ export default class WatchFavoriteSlider extends Slider{
 
     init(){
         try{
+            this.changeRatio();
             this.initDots();
             this.initRange();
             this.initSlidesPosition();

@@ -17,7 +17,7 @@ export default class PetsSlider extends Slider{
         }
     }
     currentValue(slideIndex){
-        if(slideIndex.length < 10) {
+        if(slideIndex < 10) {
             this.current.textContent = `0${slideIndex}/`;
         }else {
             this.current.textContent = `${slideIndex}/`;

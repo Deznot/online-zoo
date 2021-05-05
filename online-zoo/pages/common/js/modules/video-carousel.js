@@ -29,13 +29,9 @@ export default class VideoCarousel{
             if (target === dot) {
                 target.classList.add(this.activeClass);
                 this.previewsInner.style.transform = `translateX(${-104 * i}%)`;
-                // console.log(this.previewsInner);
             }
-            // this.previewsInner.style.transform = `translateX(${-103 * i}%)`;
-            // this.previewsInner.style.transform = `translateX(${-100 / (this.previews.length / 3) * i}%)`;
         });
-        
-      }
+    }
 
     bindTriggers() {
         this.previews.forEach((el) => {
