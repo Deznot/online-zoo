@@ -48,9 +48,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
   margin-bottom: 36px;
   max-width: 1200px;
@@ -77,19 +77,31 @@
 }
 
 .map-slider__wrapper {
-  max-width: 1074px;
+  max-width: 1140px;
   overflow: hidden;
 }
 
 @media only screen and (max-width: 1200px) {
   .map-slider__wrapper {
-    max-width: 660px;
+    max-width: 720px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .map-slider__wrapper {
+    max-width: 596px;
   }
 }
 
 @media only screen and (max-width: 640px) {
   .map-slider__wrapper {
-    max-width: 520px;
+    max-width: 540px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .map-slider__wrapper {
+    max-width: 413px;
   }
 }
 
@@ -104,13 +116,13 @@
 
 .map-slider__slide {
   min-width: 108px;
-  margin-right: 30px;
+  margin: 0 15px;
   position: relative;
 }
 
 @media only screen and (max-width: 640px) {
   .map-slider__slide {
-    margin-right: 15px;
+    margin: 0px 10px;
   }
 }
 
@@ -123,17 +135,18 @@
 .map-slider__slide--active {
   min-width: 157px;
   height: 157px;
-  margin: 0 5px 0 -25px;
+  margin: 0 5px;
 }
 
 @media only screen and (max-width: 640px) {
   .map-slider__slide--active {
-    margin: 0 5px 0 -5px;
+    margin: 0;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .map-slider__slide--active {
+    margin: 0 7.5px;
     min-width: 85px;
     height: 85px;
   }

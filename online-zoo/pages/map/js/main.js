@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     'use strict';
     common();  
 
-    const petsSlider = new MapSlider({
+    const mapSlider = new MapSlider({
         container:'.map-slider__wrapper', 
         slidesField: '.map-slider__inner',
         slides: '.map-slider__slide',
@@ -16,5 +16,5 @@ window.addEventListener('DOMContentLoaded',()=>{
         prev: '.map-slider__left-arrow',
         activeClass: 'map-slider__slide--active'
     });
-    petsSlider.init();
+    mapSlider.init();
 });
