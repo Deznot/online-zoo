@@ -24,6 +24,10 @@ export default class WatchFavoriteSlider extends Slider{
         this.range.max = this.slides.length;
     }
 
+    initSlidesPosition() {
+        this.slidesField.style.transform = `translateX(${(-100 / this.slides.length) * this.slideIndex}%)`;
+    }
+
     initDots() {
         const dots = document.querySelector('.intro__slider-bg');
 
@@ -101,6 +105,7 @@ export default class WatchFavoriteSlider extends Slider{
         try{
             this.initDots();
             this.initRange();
+            this.initSlidesPosition();
             this.showTotal();
             this.calcFieldHeight();
             this.slideClick();
