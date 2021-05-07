@@ -51,6 +51,8 @@
     --pets-in-zoo-bg-color: #333333;
     --pets-in-zoo-title: #FEFEFE;
     --pets-in-zoo-descr: #FFFFFF;
+    --pets-in-zoo-left-arrow-color: #FEFEFE;
+    --pets-in-zoo-right-arrow-color: #FEFEFE;
 
     --pay-and-feed-bg-color: #4F4F4F;
     --pay-and-feed-title: #FEFEFE;
@@ -731,7 +733,7 @@
                 transform: scale(1.3);
             }
         }
-        &-left-arrow-color {
+        &-right-arrow-color {
             fill: var(--pets-in-zoo-right-arrow-color);
         }
         &-counter {

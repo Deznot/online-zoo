@@ -10,7 +10,7 @@ export default class MapSlider extends Slider{
         this.button = document.querySelectorAll('.main__button');
         this.mapActiveClass = 'main-map__icon--active';
         this.pins = document.querySelectorAll('.main-map__icon');
-        this.madePages = ['aligator','eagle','gorilla','panda'];
+        this.madePages = ['alligator','eagle','gorilla','panda'];
         this.ratio = 0;
     }
 
