@@ -1,2 +1,3 @@
-# deznot-JSFE2021Q1
+# deznot-JSFEQ1
 Private repository for @deznot
+main page: online-zoo/pages/landing/index.html
